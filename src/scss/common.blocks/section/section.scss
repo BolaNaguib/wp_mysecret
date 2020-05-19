@@ -1,0 +1,42 @@
+.section {
+  padding: 65px 0px;
+  & .section__header {
+    margin-bottom: 30px;
+
+    & span {
+      color: $color_secondary;
+    }
+  }
+}
+.section_theme {
+  &-gray {
+    background-color: #f9f9f9;
+  }
+}
+
+.section_type-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 45px 0px 20px 0px;
+}
+
+.section_type-normal {
+  padding-top: 170px;
+  padding-bottom: 50px;
+  position: relative;
+  & * {
+    color: #fff !important;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    right: 0;
+    bottom: 0;
+    background: #000000d4;
+    z-index: 0;
+    opacity: 0.9;
+  }
+}

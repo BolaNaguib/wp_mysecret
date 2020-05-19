@@ -1,0 +1,217 @@
+.card_type-icon {
+  border-radius: 10px;
+  transition: ease-in-out 300ms;
+
+  &:hover {
+    & .iconcontainer {
+      box-shadow: 0px 0px 0px 10px #00000012;
+      transition: ease-in-out 300ms;
+    }
+  }
+  & .iconcontainer {
+    transition: ease-in-out 300ms;
+
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 100%;
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    position: relative;
+    & svg {
+      position: absolute;
+      transform: translate(-50%, 50%);
+    }
+  }
+}
+
+.card_type-card {
+  & a {
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    transition: ease-in-out 300ms;
+    &:hover {
+      text-decoration: none;
+      color: #000;
+      background-color: #eee;
+      transition: ease-in-out 300ms;
+    }
+  }
+}
+
+.card_type-gallery {
+  & a {
+    height: 100%;
+    display: block;
+    color: #fff !important;
+    transition: ease-in-out 500ms;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.83);
+      z-index: 0;
+      opacity: 0.9;
+      transition: ease-in-out 500ms;
+    }
+    & .top {
+      color: #fff;
+      display: block;
+      text-align: center;
+      transition: ease-in-out 500ms;
+    }
+    & .bottom {
+      color: #fff;
+      display: block;
+      text-align: center;
+      transition: ease-in-out 500ms;
+    }
+    & img {
+      transition: ease-in-out 500ms;
+    }
+  }
+  &:hover {
+    & a {
+      transition: ease-in-out 500ms;
+
+      &::after {
+        opacity: 0;
+        transition: ease-in-out 500ms;
+      }
+      & .top {
+        transform: translate(0px, -10px);
+        transition: ease-in-out 500ms;
+        opacity: 0;
+      }
+      & .bottom {
+        transform: translate(0px, 10px);
+        transition: ease-in-out 500ms;
+        opacity: 0;
+      }
+      & img {
+        transform: scale(1.1);
+        transition: ease-in-out 500ms;
+      }
+    }
+  }
+}
+
+.card_type-quote {
+  & * {
+    color: #fff !important;
+  }
+}
+.section_type-quote {
+  & .uk-dotnav {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    & .uk-active {
+      & a {
+        border-color: #fff;
+        background-color: #fff !important;
+      }
+    }
+  }
+}
+
+.uk-dotnav > * > * {
+  border-color: #fff;
+}
+
+.card_type-hero {
+  & * {
+    color: #fff !important;
+  }
+  & h1 {
+    font-size: 110px;
+  }
+  & a {
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    transition: ease-in-out 300ms;
+    &:hover {
+      text-decoration: none;
+      color: #000 !important;
+      background-color: #eee;
+      transition: ease-in-out 300ms;
+    }
+  }
+}
+
+.card_type-footercaption {
+  & h5 {
+    color: #fff !important;
+  }
+}
+
+.card_type-footer-links {
+  & h5 {
+    color: #fff !important;
+  }
+  & span {
+    border-bottom: 1px solid #fd5a0e;
+    padding-bottom: 10px;
+  }
+  & a {
+    color: #fff;
+    transition: 300ms;
+    &:hover {
+      text-decoration: none;
+      color: #fe5a0e;
+      transition: 300ms;
+    }
+  }
+}
+
+.card_type-360 {
+  & a {
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    transition: ease-in-out 300ms;
+    &:hover {
+      text-decoration: none;
+      color: #000 !important;
+      background-color: #eee;
+      transition: ease-in-out 300ms;
+    }
+  }
+}
+
+.card_type-product {
+  & .sale {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    min-width: 65px;
+    padding: 20px 0px;
+    text-align: center;
+    border-radius: 100%;
+  }
+  & .outofstock {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #000000bf;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 40px;
+  }
+}
