@@ -37,7 +37,7 @@ gulp.task("php", ["purgecss"], () => {
     .pipe(
       htmlmin({
         collapseWhitespace: true,
-        ignoreCustomFragments: [/<%[\s\S]*?%>/, /<\?[=|php]?[\s\S]*?\?>/],
+        // ignoreCustomFragments: [/<%[\s\S]*?%>/, /<\?[=|php]?[\s\S]*?\?>/],
       })
     )
     .pipe(newer(php.build))

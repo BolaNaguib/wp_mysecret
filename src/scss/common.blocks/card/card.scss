@@ -22,6 +22,7 @@
     max-height: 60px;
     position: relative;
     & svg {
+      max-height: 30px;
       position: absolute;
       transform: translate(-50%, 50%);
     }
@@ -213,5 +214,35 @@
     height: 100%;
     color: #fff;
     font-size: 40px;
+  }
+}
+
+.mainbutton {
+  background-color: #000 !important;
+  padding: 10px 20px !important;
+  color: #fff !important;
+  display: inline-block !important;
+  transition: ease-in-out 300ms !important;
+  font-family: "poppins" !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+  padding: 10px 20px !important;
+  border-radius: 0px !important;
+  margin-top: 10px !important;
+  &:hover {
+    text-decoration: none !important;
+    color: #000 !important;
+    background-color: #eee !important;
+    transition: ease-in-out 300ms !important;
+  }
+}
+
+.woocommerce-loop-product__link {
+  text-decoration: none;
+  color: #000 !important;
+  &:hover {
+    text-decoration: none;
+    color: #0f0f0f !important;
   }
 }

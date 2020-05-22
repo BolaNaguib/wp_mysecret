@@ -89,14 +89,16 @@ function my_acf_init()
 {
     // check function exists
     if (function_exists('acf_register_block')) {
-        add_guttenberg_block('sliderBlock');
+        add_guttenberg_block('gridicon');
+        add_guttenberg_block('grid');
         add_guttenberg_block('card');
-        add_guttenberg_block('slidercard');
+        add_guttenberg_block('block360');
+        add_guttenberg_block('galleryslider');
         add_guttenberg_block('quote');
         add_guttenberg_block('heroslider');
-        add_guttenberg_block('blocklist');
-        add_guttenberg_block('content');
-        add_guttenberg_block('testimonials');
+        // add_guttenberg_block('blocklist');
+        // add_guttenberg_block('content');
+        // add_guttenberg_block('testimonials');
         // add_guttenberg_block('quote');
         // add_guttenberg_block('certification');
         // add_guttenberg_block('cta');
