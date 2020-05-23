@@ -12,7 +12,7 @@ $hero_caption = get_field('hero_caption');
         <?php if ($hero_title) : ?>
             <h1><?php echo $hero_title; ?></h1>
         <?php else : ?>
-            <?php echo the_title() ?>
+            <h1><?php echo the_title() ?> </h1>
         <?php endif; ?>
         <?php if ($hero_caption) : ?>
             <p><?php echo $hero_caption; ?></p>
