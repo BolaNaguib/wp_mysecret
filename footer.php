@@ -36,4 +36,7 @@ $ig = get_field('instagram', 'options');
         background-color: #eeeeee40;
         border: 1px solid #eee;
         padding: 10px;
+    }
+    html{
+        word-wrap: break-word;
     }</style><div class="woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div> <?php wp_footer(); ?>
