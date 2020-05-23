@@ -14,7 +14,18 @@
     $address = get_field('address', 'options');
     $phone = get_field('phone', 'options');
     $phone_display = get_field('phone_display', 'options');
+    $logo = get_field('logo', 'option');
     ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <?php the_field('meta_title'); ?> </title>
+    <meta name="title" content=" <?php the_field('meta_title'); ?> " />
+    <meta name="keywords" content=" <?php the_field('meta_keywords'); ?> " />
+    <meta name="description" content=" <?php the_field('meta_description'); ?> " />
+    <link rel="shortcut icon" type="image/x-icon" href="<?php the_field('favicon', 'option') ?>" />
+    <?php the_field('header_js_general', 'option');
+    the_field('header_js'); ?>
+
     <?php wp_head(); ?>
 </head>
 
@@ -101,13 +112,8 @@
             <nav uk-navbar style="    padding: 20px 0px;">
 
                 <div class="uk-navbar-left">
-                    <a href="#" style="text-decoration: none !important">
-                        <!-- <img style="max-height: 60px" src="https://kloe.qodeinteractive.com/wp-content/uploads/2015/12/logo-sticky.png" alt=""> -->
-                        <b>
-                            <h2 class="uk-margin-remove">
-                                DiNouchy
-                            </h2>
-                        </b>
+                    <a href="/">
+                        <img loading="lazy" style="max-height:50px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>">
                     </a>
 
                 </div>
