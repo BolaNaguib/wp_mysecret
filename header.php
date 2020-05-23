@@ -16,7 +16,8 @@
                                 //ACF Fields  
 
                             ?> <?php $post = get_sub_field('main_menu_page');
-                                if ($post) : ?> <?php setup_postdata($post); ?> <li><a class="nav__link uk-button uk-button-text" href="<?php the_permalink($post); ?>"> <?php the_title() ?></a> <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly  
+                                $main_menu_title = get_sub_field('main_menu_title');
+                                if ($post) : ?> <?php setup_postdata($post); ?> <li><a class="nav__link uk-button uk-button-text" href="<?php the_permalink($post); ?>"> <?php echo $main_menu_title  ?></a> <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly  
                                         ?> <?php if (have_rows('sub_menu', 'options')) : ?> <div class="dropdown-controller" style="display:none;" uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0"><!-- START uk-grid --><div class="uk-grid" uk-grid="uk-margin"> <?php while (have_rows('sub_menu', 'options')) : the_row();
                                                         //ACF Fields
                                                         $block_title = get_sub_field('block_title');

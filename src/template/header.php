@@ -127,13 +127,14 @@
 
                             ?>
                                 <?php $post = get_sub_field('main_menu_page');
+                                $main_menu_title = get_sub_field('main_menu_title');
                                 if ($post) : ?>
 
                                     <?php setup_postdata($post); ?>
 
                                     <li>
                                         <a class="nav__link uk-button uk-button-text" href="<?php the_permalink($post); ?>">
-                                            <?php the_title() ?></a>
+                                            <?php echo $main_menu_title  ?></a>
                                         <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly  
                                         ?>
 

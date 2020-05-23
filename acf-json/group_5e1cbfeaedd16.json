@@ -125,6 +125,25 @@
                     "ui": 1
                 },
                 {
+                    "key": "field_5ec8af4161dae",
+                    "label": "main menu title",
+                    "name": "main_menu_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_5ec75c62aa28d",
                     "label": "sub menu",
                     "name": "sub_menu",
@@ -204,5 +223,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1590124416
+    "modified": 1590210382
 }
