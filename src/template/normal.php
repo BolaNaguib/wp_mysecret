@@ -2,14 +2,20 @@
 
 <?php get_header(); ?>
 <?php $hero_wallpaper = get_field('hero_wallpaper');
+$hero_title = get_field('hero_title');
+$title = $hero_title ? $hero_title : the_title();
 $hero_caption = get_field('hero_caption');
 ?>
 
 <section class="section section_type-normal" style="background-image: url('<?php echo $hero_wallpaper; ?>');">
     <!-- START uk-container -->
     <div class='uk-container uk-position-relative uk-text-center'>
-        <h1><?php the_title() ?></h1>
-        <p></p>
+        <?php if ($title) : ?>
+            <h1><?php echo $title; ?></h1>
+        <?php endif; ?>
+        <?php if ($hero_caption) : ?>
+            <p><?php echo $hero_caption; ?></p>
+        <?php endif; ?>
     </div>
     <!-- END uk-container -->
 
