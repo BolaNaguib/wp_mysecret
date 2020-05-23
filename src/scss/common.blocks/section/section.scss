@@ -26,6 +26,8 @@
   position: relative;
   & * {
     color: #fff !important;
+    text-transform: uppercase;
+    letter-spacing: 10px;
   }
   &::before {
     content: "";

@@ -1,12 +1,15 @@
 <?php /* Template Name: Normal Template */ ?>
 
 <?php get_header(); ?>
-<?php $hero_wallpaper = get_field('hero_wallpaper'); ?>
+<?php $hero_wallpaper = get_field('hero_wallpaper');
+$hero_caption = get_field('hero_caption');
+?>
 
 <section class="section section_type-normal" style="background-image: url('<?php echo $hero_wallpaper; ?>');">
     <!-- START uk-container -->
-    <div class='uk-container uk-position-relative'>
+    <div class='uk-container uk-position-relative uk-text-center'>
         <h1><?php the_title() ?></h1>
+        <p></p>
     </div>
     <!-- END uk-container -->
 
