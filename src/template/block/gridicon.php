@@ -14,7 +14,8 @@
                     $svg_icon = get_sub_field('svg_icon');
                     $title = get_sub_field('title');
                     $caption = get_sub_field('caption');
-
+                    $button_link = get_sub_field('button_link');
+                    $button_title = get_sub_field('button_title');
                 ?>
 
                     <!-- START uk-width-1-4@m -->
@@ -31,6 +32,9 @@
                                 <small>
                                     <?php echo $caption ?>
                                 </small>
+                                <?php if($button_title): ?>
+                                <a href="<?php echo $button_link ?>"><?php echo $button_title ?></a>
+                                <?php endif; ?>
                         </div> <!-- END card_type-icon -->
                     </div>
                     <!-- END uk-width-1-4@m -->
