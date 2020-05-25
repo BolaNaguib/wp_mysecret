@@ -32,6 +32,7 @@
                                 <small>
                                     <?php echo $caption ?>
                                 </small>
+                                <br>
                                 <?php if($button_title): ?>
                                 <a href="<?php echo $button_link ?>"><?php echo $button_title ?></a>
                                 <?php endif; ?>
