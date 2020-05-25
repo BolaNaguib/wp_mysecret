@@ -155,4 +155,23 @@ if (function_exists('acf_add_options_page')) {
         'parent_slug'    => 'theme-general-settings',
     ));
 }
+function pippin_login_form_shortcode( $atts, $content = null ) {
+ 
+	extract( shortcode_atts( array(
+      'redirect' => ''
+      ), $atts ) );
+ 
+	if (!is_user_logged_in()) {
+		if($redirect) {
+			$redirect_url = $redirect;
+		} else {
+			$redirect_url = get_permalink();
+		}
+		$form = wp_login_form(array('echo' => false, 'redirect' => $redirect_url ));
+	} 
+	return $form;
+}
+add_shortcode('loginform', 'pippin_login_form_shortcode');
+
+
 ?>
