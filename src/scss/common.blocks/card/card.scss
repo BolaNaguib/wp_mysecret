@@ -1,7 +1,19 @@
 .card_type-icon {
   border-radius: 10px;
   transition: ease-in-out 300ms;
-
+  & a {
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    transition: ease-in-out 300ms;
+    &:hover {
+      text-decoration: none;
+      color: #000 !important;
+      background-color: #eee;
+      transition: ease-in-out 300ms;
+    }
+  }
   &:hover {
     & .iconcontainer {
       box-shadow: 0px 0px 0px 10px #00000012;
