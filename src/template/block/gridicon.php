@@ -7,7 +7,7 @@
     <!-- START uk-container -->
     <div class='uk-container'>
         <!-- START uk-grid -->
-        <div class='uk-grid uk-grid-small' uk-grid="uk-margin">
+        <div class='uk-grid uk-grid-small uk-grid-match' uk-grid="uk-margin">
             <?php if (have_rows('block')) : ?>
                 <?php while (have_rows('block')) : the_row();
                     //ACF Fields

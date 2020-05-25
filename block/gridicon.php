@@ -1,7 +1,7 @@
 <?php
 // ACF FIELDS 
 
-?> <!-- START section --><div class="section"><!-- START uk-container --><div class="uk-container"><!-- START uk-grid --><div class="uk-grid uk-grid-small" uk-grid="uk-margin"> <?php if (have_rows('block')) : ?> <?php while (have_rows('block')) : the_row();
+?> <!-- START section --><div class="section"><!-- START uk-container --><div class="uk-container"><!-- START uk-grid --><div class="uk-grid uk-grid-small uk-grid-match" uk-grid="uk-margin"> <?php if (have_rows('block')) : ?> <?php while (have_rows('block')) : the_row();
                     //ACF Fields
                     $svg_icon = get_sub_field('svg_icon');
                     $title = get_sub_field('title');
