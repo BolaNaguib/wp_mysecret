@@ -17,7 +17,7 @@ $ig = get_field('instagram', 'options');
 
                     if ($posts) : ?> <ul class="uk-list"> <?php foreach ($posts as $post) : // variable must be called $post (IMPORTANT) 
                             ?> <?php setup_postdata($post); ?> <li><a href="<?php the_permalink(); ?>"><small> <?php the_title(); ?> </small></a></li> <?php endforeach; ?> </ul> <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
-                        ?> <?php endif; ?> </div><!-- END card_type-footercaption --></div><!-- END uk-width-1-4@m --></div><!-- END uk-grid --><br><br><!-- START uk-text-center --><div class="uk-text-center"><small>© 2020 DiNouchy | Developed by Inetwork-me.com</small></div><!-- END uk-text-center --></div><!-- END uk-container --></footer><!-- END  --><script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script><style>.cloudimage-360 canvas {
+                        ?> <?php endif; ?> </div><!-- END card_type-footercaption --></div><!-- END uk-width-1-4@m --></div><!-- END uk-grid --><br><br><!-- START uk-text-center --><div class="uk-text-center"><small>© 2020 DiNouchy | Developed by Inetwork-me.com</small></div><!-- END uk-text-center --></div><!-- END uk-container --></footer><!-- END  --><!-- <a class="uk-button uk-button-default" href="#contactform" uk-toggle>Open</a> --><div id="contactform" class="uk-flex-top" uk-modal><div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center"><button class="uk-modal-close-default" type="button" uk-close></button><h2>EMAIL US</h2><hr> <?php echo do_shortcode('[contact-form-7 id="18" title="Contact form 1"]'); ?> </div></div><script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script><style>.cloudimage-360 canvas {
         width: unset !important;
         max-height: 400px;
     }
@@ -48,4 +48,26 @@ $ig = get_field('instagram', 'options');
     display: block;
     width: 100%;
     margin-top: 10px;
+}
+span.wpcf7-form-control-wrap {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+
+input.wpcf7-form-control.wpcf7-text,input.wpcf7-form-control.wpcf7-number,textarea.wpcf7-form-control.wpcf7-textarea{
+    background-color: #eeeeee40;
+        border: 1px solid #eee;
+        padding: 10px;
+        width: 100%;
+    display: block;
+}
+input.wpcf7-form-control.wpcf7-submit {
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    border: 0px;
+    margin: 10px 0px;
 }</style><div class="uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div><!-- START uk-hidden card_type-product --><div class="uk-hidden card_type-product"><span class="outofstock"></span> <span class="sale"></span></div><!-- END uk-hidden card_type-product --> <?php wp_footer(); ?>

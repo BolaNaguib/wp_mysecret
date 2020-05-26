@@ -131,7 +131,19 @@ $ig = get_field('instagram', 'options');
 
 
 
+<!-- <a class="uk-button uk-button-default" href="#contactform" uk-toggle>Open</a> -->
 
+<div id="contactform" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-center">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2>EMAIL US</h2>
+        <hr>
+        <?php echo do_shortcode('[contact-form-7 id="18" title="Contact form 1"]'); ?>
+
+
+    </div>
+</div>
 
 
 
@@ -170,6 +182,28 @@ $ig = get_field('instagram', 'options');
     display: block;
     width: 100%;
     margin-top: 10px;
+}
+span.wpcf7-form-control-wrap {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+
+input.wpcf7-form-control.wpcf7-text,input.wpcf7-form-control.wpcf7-number,textarea.wpcf7-form-control.wpcf7-textarea{
+    background-color: #eeeeee40;
+        border: 1px solid #eee;
+        padding: 10px;
+        width: 100%;
+    display: block;
+}
+input.wpcf7-form-control.wpcf7-submit {
+    background-color: #000;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline-block;
+    border: 0px;
+    margin: 10px 0px;
 }
 </style>
 <div class=" uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom  uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div>
