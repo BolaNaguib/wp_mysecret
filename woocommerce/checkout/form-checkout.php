@@ -23,14 +23,14 @@ if (!defined('ABSPATH')) {
 do_action('woocommerce_before_checkout_form', $checkout);
 
 // If checkout registration is disabled and not logged in, the user cannot checkout.
-if (!$checkout->is_registration_enabled() && $checkout->is_registration_required() && !is_user_logged_in()) {
-    echo esc_html(apply_filters('woocommerce_checkout_must_be_logged_in_message', __('You must be logged in to checkout.', 'woocommerce')));
-    return;
-}
+// if (!$checkout->is_registration_enabled() && $checkout->is_registration_required() && !is_user_logged_in()) {
+//     echo esc_html(apply_filters('woocommerce_checkout_must_be_logged_in_message', __('You must be logged in to checkout.', 'woocommerce')));
+//     return;
+// }
 
 ?>
-
-
+<?php global $current_user; wp_get_current_user(); ?>
+<?php if ( is_user_logged_in() ) :  ?>
 
 
 
@@ -77,3 +77,16 @@ if (!$checkout->is_registration_enabled() && $checkout->is_registration_required
 </div>
 <!-- END uk-container -->
 <?php do_action('woocommerce_after_checkout_form', $checkout); ?>
+<?php else: ?>
+<div class="section">
+    <div class=" uk-flex uk-flex-middle uk-flex-center uk-text-center">
+        <div class="loginmodal">
+        <h2 class="uk-modal-title">You must login to complete Checkout </h2>
+        <?php echo do_shortcode('[loginform]') ?>
+
+        </div>
+        </div>
+
+    </div>
+<?php endif; ?>
+

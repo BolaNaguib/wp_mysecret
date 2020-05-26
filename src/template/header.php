@@ -297,7 +297,6 @@
         <div class="loginmodal">
         <h2 class="uk-modal-title">Login</h2>
         <?php echo do_shortcode('[loginform]') ?>
-        <?php echo do_shortcode('[nextend_social_login]') ?>
 
         </div>
        
