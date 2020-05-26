@@ -260,3 +260,34 @@
     color: #0f0f0f !important;
   }
 }
+
+
+.card_type-according{
+  & .accordingtitle{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+  }
+  & .accordingcontent{
+    border-bottom: 1px solid #000;
+  }
+  & .actionbutton{
+    background-color: #000 !important;
+    padding: 10px 20px !important;
+    color: #fff !important;
+    display: inline-block !important;
+    transition: ease-in-out 300ms !important;
+    font-family: "poppins" !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    padding: 10px 20px !important;
+    border-radius: 0px !important;
+    margin-top: 10px !important;
+    &:hover {
+      text-decoration: none !important;
+      color: #000 !important;
+      background-color: #eee !important;
+      transition: ease-in-out 300ms !important;
+    }
+  }
+}

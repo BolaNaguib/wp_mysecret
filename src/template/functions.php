@@ -96,8 +96,8 @@ function my_acf_init()
         add_guttenberg_block('galleryslider');
         add_guttenberg_block('quote');
         add_guttenberg_block('heroslider');
-        // add_guttenberg_block('blocklist');
-        // add_guttenberg_block('content');
+        add_guttenberg_block('according');
+        add_guttenberg_block('contactform');
         // add_guttenberg_block('testimonials');
         // add_guttenberg_block('quote');
         // add_guttenberg_block('certification');
