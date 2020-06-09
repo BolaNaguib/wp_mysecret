@@ -89,16 +89,18 @@ function my_acf_init()
 {
     // check function exists
     if (function_exists('acf_register_block')) {
-        add_guttenberg_block('gridicon');
-        add_guttenberg_block('grid');
-        add_guttenberg_block('card');
-        add_guttenberg_block('block360');
-        add_guttenberg_block('galleryslider');
-        add_guttenberg_block('quote');
-        add_guttenberg_block('heroslider');
-        add_guttenberg_block('according');
-        add_guttenberg_block('contactform');
-        // add_guttenberg_block('testimonials');
+        add_guttenberg_block('wideslider');
+
+        // add_guttenberg_block('gridicon');
+        // add_guttenberg_block('grid');
+        // add_guttenberg_block('card');
+        // add_guttenberg_block('block360');
+        // add_guttenberg_block('galleryslider');
+        // add_guttenberg_block('quote');
+        // add_guttenberg_block('heroslider');
+        // add_guttenberg_block('according');
+        // add_guttenberg_block('contactform');
+        // // add_guttenberg_block('testimonials');
         // add_guttenberg_block('quote');
         // add_guttenberg_block('certification');
         // add_guttenberg_block('cta');
@@ -172,6 +174,4 @@ function pippin_login_form_shortcode( $atts, $content = null ) {
 	return $form;
 }
 add_shortcode('loginform', 'pippin_login_form_shortcode');
-
-
-?>
+?> 
