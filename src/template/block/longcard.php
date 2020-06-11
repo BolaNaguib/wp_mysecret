@@ -15,7 +15,7 @@ $button_link = get_field('button_link');
     <!-- START uk-container -->
     <div class='uk-container'>
         <!-- START uk-grid uk-grid-match uk-grid-collapse -->
-        <div class='uk-grid-collapse' uk-grid>
+        <div class='uk-grid uk-grid-match uk-flex-middle uk-flex'>
             <!-- START uk-width-1-2@m uk-width-1-1 -->
             <div class='uk-width-1-2@m uk-width-1-1 uk-margin-bottom '>
                 <!-- START leftblock -->

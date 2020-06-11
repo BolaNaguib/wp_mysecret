@@ -212,7 +212,7 @@ $ig = get_field('instagram', 'options');
         margin: 10px 0px;
     }
 </style>
-<div class="section-longcard uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom  uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div>
+<div class="  uk-grid-collapse  section-longcard uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom  uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div>
 <!-- START uk-hidden card_type-product -->
 <div class='uk-hidden card_type-product rightblock '>
     <span class="outofstock"></span>
