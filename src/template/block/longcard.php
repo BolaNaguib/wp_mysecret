@@ -15,12 +15,12 @@ $button_link = get_field('button_link');
     <!-- START uk-container -->
     <div class='uk-container'>
         <!-- START uk-grid uk-grid-match uk-grid-collapse -->
-        <div class='uk-grid uk-grid-match uk-flex-middle uk-flex'>
+        <div class='uk-grid uk-grid-match uk-grid-collapse' uk-grid='uk-margin'>
             <!-- START uk-width-1-2@m uk-width-1-1 -->
-            <div class='uk-width-1-2@m uk-width-1-1 uk-margin-bottom '>
+            <div class='uk-width-1-2@m uk-width-1-1 '>
                 <!-- START leftblock -->
-                <div class='leftblock'>
-                    <img src="<?php echo $media['url'] ?>" alt="<?php echo $media['alt'] ?>">
+                <div class='leftblock' style="background: url('<?php echo $media['url'] ?>')">
+                    <!-- <img src="<?php echo $media['url'] ?>" alt="<?php echo $media['alt'] ?>"> -->
                 </div>
                 <!-- END leftblock -->
 

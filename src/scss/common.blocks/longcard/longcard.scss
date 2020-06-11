@@ -1,15 +1,17 @@
 .section-longcard {
-  background-color: #fff;
   & .uk-grid {
-    background-color: #fff;
-
-    & .uk-width-1-1 {
-      background-color: $color_secondary;
-    }
   }
   & .leftblock {
+    & img {
+      width: 100%;
+    }
+  }
+  & .rightblockcontainer {
   }
   & .rightblock {
+    background-color: $color_secondary;
+    padding: 180px 0px;
+
     & h2 {
       font-size: 108px;
       color: #fff;

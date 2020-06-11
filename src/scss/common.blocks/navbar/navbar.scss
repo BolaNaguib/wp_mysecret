@@ -17,8 +17,9 @@
     font-size: 13px;
     margin-left: 10px;
     transition: ease-in-out 300ms;
+    text-transform: uppercase;
     &:hover {
-      color: #fe5f15 !important;
+      color: $color_secondary !important;
       text-decoration: none;
       transition: ease-in-out 300ms;
     }
@@ -31,7 +32,7 @@
     margin-right: 10px;
     transition: ease-in-out 300ms;
     &:hover {
-      color: #fe5f15 !important;
+      color: $color_secondary !important;
       text-decoration: none;
       transition: ease-in-out 300ms;
     }
@@ -90,7 +91,7 @@ button.mobilemenu {
 .navbar_theme-white {
   background-color: #fff;
   & .callbutton {
-    color: #fe5f15;
+    color: $color_secondary;
   }
 }
 .uk-sticky-below {
