@@ -172,7 +172,7 @@
                                                                             ?>
                                                                         <?php endforeach; ?>
                                                                     <?php endif; ?>
-                                                             
+
                                                                 </ul>
                                                             </div>
                                                             <!-- END card_type-footercaption -->
@@ -192,20 +192,25 @@
                             <?php endwhile; ?>
                         <?php endif; ?>
                         <li>
-<?php global $current_user; wp_get_current_user(); ?>
-<?php if ( is_user_logged_in() ) :  ?>
-                                        <a class="nav__link " href="./my-account" >
-                                        <svg style="    width: 10px;
-    margin-right: 10px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path></svg>
-                                         <?php echo $current_user->display_name;  ?></a>
-<?php else: ?>
-    <a class="nav__link " href="#loginmodal" uk-toggle >
-                                        <svg style="    width: 10px;
-    margin-right: 10px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path></svg>
-                                         Login </a>
-<?php endif; ?>
+                            <?php global $current_user;
+                            wp_get_current_user(); ?>
+                            <?php if (is_user_logged_in()) :  ?>
+                                <a class="nav__link " href="./my-account">
+                                    <svg style="    width: 10px;
+    margin-right: 10px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14">
+                                        <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path>
+                                    </svg>
+                                    <?php echo $current_user->display_name;  ?></a>
+                            <?php else : ?>
+                                <a class="nav__link " href="#loginmodal" uk-toggle>
+                                    <svg style="    width: 10px;
+    margin-right: 10px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14">
+                                        <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path>
+                                    </svg>
+                                    Login </a>
+                            <?php endif; ?>
 
-</li>
+                        </li>
                     </ul>
                     <ul class="uk-hidden@m uk-margin-remove">
                         <button class="mobilemenu">
@@ -292,15 +297,15 @@
 
 
     <div id="loginmodal" class="uk-modal-container" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body  uk-flex uk-flex-middle uk-flex-center uk-text-center">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="loginmodal">
-        <h2 class="uk-modal-title">Login</h2>
-        <?php echo do_shortcode('[loginform]') ?>
+        <div class="uk-modal-dialog uk-modal-body  uk-flex uk-flex-middle uk-flex-center uk-text-center">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="loginmodal">
+                <h2 class="uk-modal-title">Login</h2>
+                <?php echo do_shortcode('[loginform]') ?>
+
+            </div>
 
         </div>
-       
     </div>
-</div>
 
-</div>
+    </div>

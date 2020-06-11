@@ -7,7 +7,7 @@
 
 */
 // 1. Your custom variables and variable overwrites.
-$global-link-color: #da7d02;
+$global-link-color: #fe7799;
 $global-color: #000;
 
 // 2. Import default variables and available mixins.
@@ -22,7 +22,7 @@ $global-color: #000;
 // 4. Import UIkit.
 @import "uikit/scss/uikit-theme.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 @import "common.mixins/common.mixins";
 @import "common.variables/common.variables";

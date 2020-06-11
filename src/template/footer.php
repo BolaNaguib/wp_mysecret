@@ -175,44 +175,51 @@ $ig = get_field('instagram', 'options');
     html {
         word-wrap: break-word;
     }
-    input#user_pass,input#user_login {
-    background-color: #eeeeee40;
-    border: 1px solid #eee;
-    padding: 10px;
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-}
-span.wpcf7-form-control-wrap {
-    width: 100%;
-    display: block;
-    overflow: hidden;
-}
+
+    input#user_pass,
+    input#user_login {
+        background-color: #eeeeee40;
+        border: 1px solid #eee;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    span.wpcf7-form-control-wrap {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
 
 
-input.wpcf7-form-control.wpcf7-text,input.wpcf7-form-control.wpcf7-number,textarea.wpcf7-form-control.wpcf7-textarea{
-    background-color: #eeeeee40;
+    input.wpcf7-form-control.wpcf7-text,
+    input.wpcf7-form-control.wpcf7-number,
+    textarea.wpcf7-form-control.wpcf7-textarea {
+        background-color: #eeeeee40;
         border: 1px solid #eee;
         padding: 10px;
         width: 100%;
-    display: block;
-}
-input.wpcf7-form-control.wpcf7-submit {
-    background-color: #000;
-    padding: 10px 20px;
-    color: #fff;
-    display: inline-block;
-    border: 0px;
-    margin: 10px 0px;
-}
+        display: block;
+    }
+
+    input.wpcf7-form-control.wpcf7-submit {
+        background-color: #000;
+        padding: 10px 20px;
+        color: #fff;
+        display: inline-block;
+        border: 0px;
+        margin: 10px 0px;
+    }
 </style>
-<div class=" uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom  uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div>
+<div class="section-longcard uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom  uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div>
 <!-- START uk-hidden card_type-product -->
-<div class='uk-hidden card_type-product'>
+<div class='uk-hidden card_type-product rightblock '>
     <span class="outofstock"></span>
     <span class="sale"></span>
 </div>
 <!-- END uk-hidden card_type-product -->
+<!-- uk-active uk-grid-collapse -->
 <?php wp_footer(); ?>
 </body>
 

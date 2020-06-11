@@ -1,0 +1,13 @@
+.section-longcard {
+  & .leftblock {
+    background-color: #fff;
+  }
+  & .rightblock {
+    background-color: $color_secondary;
+    & h2 {
+      font-size: 108px;
+      color: #fff;
+      line-height: 0.8em;
+    }
+  }
+}
