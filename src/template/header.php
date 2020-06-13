@@ -96,6 +96,52 @@
                     <!-- END topnavmenu -->
                 </div>
                 <!-- END UK-WIDTH-1-3@m uk-flex uk-flex-right -->
+
+                <!-- START uk-width-1-3@m -->
+                <div class='uk-width-1-3@m uk-flex uk-flex-right'>
+                    <!-- START uk-grid uk-child-width-auto -->
+                    <div class='uk-grid uk-child-width-auto'>
+                        <!-- START div -->
+                        <div class='div'>
+                            <!-- START logincontainer -->
+                            <div class='logincontainer topnavmenu'>
+                                <a class=" " href="#loginmodal" uk-toggle>
+                                    <!-- <svg style="    width: 10px;
+    margin-right: 10px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14">
+                                        <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path>
+                                    </svg> -->
+                                    Login </a>
+                            </div>
+                            <!-- END logincontainer -->
+                        </div>
+                        <!-- END div -->
+                        <!-- START div -->
+                        <div class='div'>
+
+                            <!-- START currencyswitchercontainer -->
+                            <div class='currencyswitchercontainer'>
+                                <?php echo do_shortcode('[woocs style="1" show_flags="0" head_bg="#000" ]'); ?>
+                            </div>
+                            <!-- END currencyswitchercontainer -->
+                        </div>
+                        <!-- END div -->
+                        <!-- START div -->
+                        <div class='div'>
+                            <!-- START cardiconcontainer -->
+                            <div class='cardiconcontainer'>
+                                <?php global $woocommerce; ?>
+
+                                <img src="<?php echo get_template_directory_uri() ?>/images/cart.png" alt=""> <span style=" padding: 1px 9px;" class="badgex"><?php echo $woocommerce->cart->cart_contents_count ?></span>
+                            </div>
+                            <!-- END cardiconcontainer -->
+                        </div>
+                        <!-- END div -->
+                    </div>
+                    <!-- END uk-grid uk-child-width-auto -->
+
+                </div>
+                <!-- END uk-width-1-3@m -->
+
             </div>
             <!-- END uk-grid -->
         </div>
@@ -104,86 +150,80 @@
     <!-- END top-menu -->
 
 
-
-
-
-    <!-- START mainmenu -->
-    <div class='mainmenu'>
+    <!-- START mainmenu_desktop -->
+    <div class='mainmenu_desktop'>
         <!-- START uk-container -->
-        <div class='uk-container boundary-align'>
-            <nav uk-navbar style="    padding: 20px 0px;">
-
-                <div class="uk-navbar-left">
-                    <a href="/">
-                        <img loading="lazy" style="max-height:50px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>">
-                    </a>
-
-                </div>
-
-                <div class="uk-navbar-right">
-
+        <div class='uk-container'>
+            <!-- START uk-text-center -->
+            <div class='uk-text-center' style="padding:30px 0px">
+                <a href="/">
+                    <img loading="lazy" style="max-height:110px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>">
+                </a>
+            </div>
+            <!-- END uk-text-center -->
+            <!-- START mainmenua_navbar -->
+            <div class='mainmenua_navbar'>
+                <nav uk-navbar>
                     <ul class="uk-navbar-nav uk-visible@m">
                         <?php if (have_rows('main_menu', 'options')) : ?>
-                            <?php while (have_rows('main_menu', 'options')) : the_row();
-                                //ACF Fields  
-
-                            ?>
+                            <?php while (have_rows('main_menu', 'options')) : the_row(); ?>
                                 <?php $post = get_sub_field('main_menu_page');
                                 $main_menu_title = get_sub_field('main_menu_title');
                                 if ($post) : ?>
-
                                     <?php setup_postdata($post); ?>
-
-                                    <li>
-                                        <a class="nav__link uk-button uk-button-text" href="<?php the_permalink($post); ?>">
+                                    <li style="uk-position-relative">
+                                        <a class="nav__link" href="<?php the_permalink($post); ?>">
                                             <?php echo $main_menu_title  ?></a>
                                         <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly  
                                         ?>
 
                                         <?php if (have_rows('sub_menu', 'options')) : ?>
 
-                                            <div class="dropdown-controller" style="display:none;" uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
-                                                <!-- START uk-grid -->
-                                                <div class='uk-grid' uk-grid="uk-margin">
-                                                    <?php while (have_rows('sub_menu', 'options')) : the_row();
-                                                        //ACF Fields
-                                                        $block_title = get_sub_field('block_title');
-                                                    ?>
-                                                        <!-- START uk-width-1-4@m -->
-                                                        <div class='uk-width-1-4@m uk-margin-bottom'>
-                                                            <!-- START card_type-footercaption -->
-                                                            <div class='card_type-footer-links'>
-                                                                <?php if ($block_title) : ?>
-                                                                    <h5><?php echo $block_title ?></h5>
-                                                                <?php endif; ?>
+                                            <div class="dropdown-controller" style="display:none;" uk-dropdown="pos: bottom-left; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
 
-                                                                <ul class="uk-list">
-                                                                    <?php $postx = get_sub_field('page');
-                                                                    if ($postx) : ?>
-                                                                        <?php foreach ($postx as $post) : // variable must be called $post (IMPORTANT) 
-                                                                        ?>
-                                                                            <?php setup_postdata($post); ?>
-                                                                            <li>
-                                                                                <small>
-                                                                                    <a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
+                                                <!-- START card_type-submenulink -->
+                                                <div class='card_type-submenulink'>
 
-                                                                                </small>
+                                                    <ul class="uk-list">
+                                                        <?php while (have_rows('sub_menu', 'options')) : the_row();
+                                                            //ACF Fields
+                                                            $term = get_sub_field('category');
 
-                                                                            </li>
-                                                                            <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly  
-                                                                            ?>
-                                                                        <?php endforeach; ?>
+                                                        ?>
+                                                            <li>
+                                                                <small>
+                                                                    <?php if ($term) : ?>
+                                                                        <a class="nav__link-submenu" href="<?php echo esc_url(get_term_link($term)); ?>"> <?php echo esc_html($term->name); ?> <?php the_title(); ?>
+
+                                                                        </a>
                                                                     <?php endif; ?>
+                                                                    <!-- START card_type-submenulink -->
+                                                                    <div class="dropdown-controller" style="display:none;     margin-left: 0px;" uk-dropdown="pos: right; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
+                                                                        <!-- START card_type-submenulink -->
+                                                                        <div class='card_type-submenulink'>
 
-                                                                </ul>
-                                                            </div>
-                                                            <!-- END card_type-footercaption -->
-                                                        </div>
-                                                        <!-- END uk-width-1-4@m -->
-                                                    <?php endwhile; ?>
+                                                                            <ul class="uk-list">
 
+                                                                                <li>
+                                                                                    <small>
+                                                                                        <a class="nav__link-submenu" href="<?php the_permalink(); ?>"> test <?php the_title(); ?> </a>
+                                                                                    </small></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <!-- END card_type-submenulink -->
+                                                                    </div> <!-- END dropdown-controller -->
+
+                                                                </small>
+
+                                                            </li>
+
+                                                        <?php endwhile; ?>
+
+                                                    </ul>
                                                 </div>
-                                                <!-- END uk-grid -->
+                                                <!-- END card_type-submenulink -->
+
+
 
                                             </div>
                                         <?php endif; ?>
@@ -193,103 +233,15 @@
                                 <?php endif; ?>
                             <?php endwhile; ?>
                         <?php endif; ?>
-                        <li>
-                            <?php global $current_user;
-                            wp_get_current_user(); ?>
-                            <?php if (is_user_logged_in()) :  ?>
-                                <a class="nav__link " href="./my-account">
-                                    <svg style="    width: 10px;
-    margin-right: 10px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14">
-                                        <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path>
-                                    </svg>
-                                    <?php echo $current_user->display_name;  ?></a>
-                            <?php else : ?>
-                                <a class="nav__link " href="#loginmodal" uk-toggle>
-                                    <svg style="    width: 10px;
-    margin-right: 10px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14">
-                                        <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path>
-                                    </svg>
-                                    Login </a>
-                            <?php endif; ?>
 
-                        </li>
                     </ul>
-                    <ul class="uk-hidden@m uk-margin-remove">
-                        <button class="mobilemenu">
-                            <svg width="20px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-bars fa-w-14">
-                                <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path>
-                            </svg>
-                            <div style="display:none; box-shadow:none;" uk-dropdown="mode:click;pos: bottom-justify; boundary: .boundary-align; boundary-align: true; delay-hide: 0">
-                                <!-- START mobilecontainer -->
-                                <div class='mobilecontainer uk-text-left'>
-                                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-                                        <?php if (have_rows('main_menu', 'options')) : ?>
-                                            <?php while (have_rows('main_menu', 'options')) : the_row();
-                                                //ACF Fields  
-                                                $postz = get_sub_field('main_menu_page');
-                                                $main_menu_title = get_sub_field('main_menu_title');
-                                                if ($postz) : ?>
-
-                                                    <?php setup_postdata($postz); ?>
-
-
-                                                    <li <?php if (have_rows('sub_menu', 'options')) : ?> class="uk-parent" <?php endif; ?>>
-                                                        <a class="nav__link_type-mobile" href="<?php the_permalink($postz); ?>">
-                                                            <?php echo $main_menu_title  ?>
-                                                        </a>
-                                                        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly  
-                                                        ?>
-
-                                                        <?php if (have_rows('sub_menu', 'options')) : ?>
-                                                            <ul class="uk-nav-sub">
-                                                                <?php while (have_rows('sub_menu', 'options')) : the_row();
-                                                                    //ACF Fields
-                                                                    $block_title = get_sub_field('block_title');
-                                                                ?>
-                                                                    <?php if ($block_title) : ?>
-                                                                        <h5><?php echo $block_title ?></h5>
-                                                                    <?php endif; ?>
-
-                                                                    <ul class="uk-list">
-                                                                        <?php $postx = get_sub_field('page');
-                                                                        if ($postx) : ?>
-                                                                            <?php foreach ($postx as $post) : // variable must be called $post (IMPORTANT) 
-                                                                            ?>
-                                                                                <?php setup_postdata($post); ?>
-                                                                                <li>
-                                                                                    <a class="nav__link-mobile-sub" href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
-
-
-                                                                                </li>
-                                                                                <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly  
-                                                                                ?>
-                                                                            <?php endforeach; ?>
-                                                                        <?php endif; ?>
-
-                                                                    </ul>
-                                                                <?php endwhile; ?>
-                                                            </ul>
-                                                        <?php endif; ?>
-                                                    </li>
-
-
-                                                <?php endif; ?>
-                                            <?php endwhile; ?>
-                                        <?php endif; ?>
-
-                                    </ul>
-                                </div>
-                                <!-- END mobilecontainer -->
-                            </div>
-                        </button>
-                    </ul>
-                </div>
-
-            </nav>
+                </nav>
+            </div>
+            <!-- END mainmenua_navbar -->
         </div>
         <!-- END uk-container -->
     </div>
-    <!-- END mainmenu -->
+    <!-- END mainmenu_desktop -->
 
 
 

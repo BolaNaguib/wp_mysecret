@@ -1,0 +1,25 @@
+.currencyswitchercontainer {
+  box-shadow: none !important;
+  & .woocs-style-1-dropdown {
+    background-color: #000 !important;
+    color: #fff;
+    border: none !important;
+    border-radius: 0px;
+    box-shadow: none !important;
+
+    & .woocs-style-1-select {
+      & i {
+        display: none !important;
+      }
+    }
+  }
+}
+.woocs-style-1-dropdown .woocs-style-1-select {
+  padding: 0px !important;
+}
+
+.card_type-footer-ig {
+  //   & .sb_instagram_header {
+  //     display: none !important;
+  //   }
+}

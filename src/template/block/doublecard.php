@@ -14,8 +14,8 @@ $right_page = get_field('right_page');
     <div class='uk-container'>
         <!-- START uk-grid uk-grid-match -->
         <div class='uk-grid uk-grid-match uk-grid-small'>
-            <!-- START uk-width-1-2@m uk-width-1-1 -->
-            <div class='uk-width-1-2@m uk-width-1-1 uk-margin-bottom'>
+            <!-- START uk-width-2-3@m uk-width-1-1 -->
+            <div class='uk-width-2-3@m uk-width-1-1 uk-margin-bottom'>
                 <!-- START leftblock -->
                 <div class='leftblock'>
 
@@ -24,9 +24,9 @@ $right_page = get_field('right_page');
                 </div>
                 <!-- END leftblock -->
             </div>
-            <!-- END uk-width-1-2@m uk-width-1-1 -->
-            <!-- START uk-width-1-2@m uk-width-1-1 -->
-            <div class='uk-width-1-2@m uk-width-1-1 uk-margin-bottom'>
+            <!-- END uk-width-2-3@m uk-width-1-1 -->
+            <!-- START uk-width-1-3@m uk-width-1-1 -->
+            <div class='uk-width-1-3@m uk-width-1-1 uk-margin-bottom'>
                 <!-- START right-block -->
                 <div class='right-block uk-flex uk-flex-center uk-flex-middle uk-text-center' style="background-image: url('<?php echo $right_image['url'] ?>');">
                     <a href="<?php echo $right_page ?>">
@@ -43,7 +43,7 @@ $right_page = get_field('right_page');
                 </div>
                 <!-- END right-block -->
             </div>
-            <!-- END uk-width-1-2@m uk-width-1-1 -->
+            <!-- END uk-width-1-3@m uk-width-1-1 -->
         </div>
         <!-- END uk-grid uk-grid-match -->
     </div>

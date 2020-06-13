@@ -6,8 +6,7 @@ $tw = get_field('twitter', 'options');
 $pi = get_field('pinterest', 'options');
 $ig = get_field('instagram', 'options');
 ?>
-
-<!-- START  -->
+<!-- START -->
 <footer class='section_type-footer'>
     <!-- START uk-container -->
     <div class='uk-container'>
@@ -87,31 +86,13 @@ $ig = get_field('instagram', 'options');
             <!-- END uk-width-1-4@m -->
             <!-- START uk-width-1-4@m -->
             <div class='uk-width-1-4@m'>
-                <!-- START card_type-footercaption -->
-                <div class='card_type-footer-links'>
-                    <h5><?php the_field('col2_title', 'options'); ?></h5>
-                    <?php
-
-                    $posts = get_field('col2list', 'options');
-
-                    if ($posts) : ?>
-                        <ul class="uk-list">
-                            <?php foreach ($posts as $post) : // variable must be called $post (IMPORTANT) 
-                            ?>
-                                <?php setup_postdata($post); ?>
-                                <li>
-                                    <a href="<?php the_permalink(); ?>"> <small> <?php the_title(); ?> </small> </a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
-                        ?>
-                    <?php endif; ?>
+                <!-- START card_type-footer-ig -->
+                <div class='card_type-footer-ig'>
+                    <?php echo do_shortcode('[instagram-feed]'); ?>
                 </div>
-                <!-- END card_type-footercaption -->
+                <!-- END card_type-footer-ig -->
             </div>
             <!-- END uk-width-1-4@m -->
-
         </div>
         <!-- END uk-grid -->
         <br>
@@ -119,7 +100,7 @@ $ig = get_field('instagram', 'options');
         <!-- START uk-text-center -->
         <div class='uk-text-center'>
             <small>
-                © 2020 DiNouchy | Developed by Inetwork-me.com
+                © 2020 MySecret | Developed by Inetwork-me.com
             </small>
 
         </div>
@@ -140,11 +121,8 @@ $ig = get_field('instagram', 'options');
         <h2>EMAIL US</h2>
         <hr>
         <?php echo do_shortcode('[contact-form-7 id="18" title="Contact form 1"]'); ?>
-
-
     </div>
 </div>
-
 
 
 
@@ -212,6 +190,8 @@ $ig = get_field('instagram', 'options');
         margin: 10px 0px;
     }
 </style>
+
+
 <div class="  uk-grid-collapse  section-longcard uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom  uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div>
 <!-- START uk-hidden card_type-product -->
 <div class='uk-hidden card_type-product rightblock '>
@@ -221,6 +201,49 @@ $ig = get_field('instagram', 'options');
 <!-- END uk-hidden card_type-product -->
 <!-- uk-active uk-grid-collapse -->
 <?php wp_footer(); ?>
+<style>
+    .woocs-style-1-dropdown .woocs-style-1-select>i {
+        display: none !importnat;
+    }
+
+    .woocs-style-1-dropdown .woocs-style-1-dropdown-menu {
+        background-color: #000;
+        color: #fff;
+        min-width: 100px;
+        margin-top: 10px;
+
+    }
+
+    .woocs-style-1-dropdown .woocs-style-1-dropdown-menu li:hover {
+        background-color: #000 !important;
+    }
+
+    .woocs-style-1-active {
+        border: none !important;
+        border: 0px !important;
+    }
+
+    .woocs-style-1-dropdown.woocs-style-1-active:hover,
+    .woocs-style-1-dropdown.woocs-style-1-active {
+        box-shadow: none !important;
+        border-radius: 0px;
+        background-color: #f8f8f8;
+        border: 0px solid #fff !important;
+        border-color: #f00 !important;
+        outline: none;
+    }
+
+
+    /* instagram feed override Styling */
+    .card_type-footer-ig .sb_instagram_header {
+        display: none !important;
+    }
+
+    .card_type-footer-ig #sbi_load {
+        display: none !important;
+
+    }
+</style>
 </body>
 
 </html>
