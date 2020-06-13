@@ -93,6 +93,7 @@ function my_acf_init()
         add_guttenberg_block('wideslider');
         add_guttenberg_block('doublecard');
         add_guttenberg_block('longcard');
+        add_guttenberg_block('musthave');
 
         // add_guttenberg_block('gridicon');
         // add_guttenberg_block('grid');
