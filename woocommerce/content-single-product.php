@@ -37,6 +37,7 @@ if (post_password_required()) {
 	<!-- START uk-container -->
 	<div class='uk-container'>
 
+		<hr>
 		<div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 
 			<?php

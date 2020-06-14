@@ -24,6 +24,7 @@ h6 {
 }
 a {
   &:hover {
-    text-decoration: none;
+    color: $color_secondary !important;
+    text-decoration: none !important;
   }
 }

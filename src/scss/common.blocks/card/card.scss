@@ -207,29 +207,29 @@
   }
 }
 
-.card_type-product {
-  & .sale {
-    position: absolute;
-    top: -30px;
-    right: 20px;
-    background-color: #000;
-    color: #fff;
-    min-width: 65px;
-    padding: 20px 0px;
-    text-align: center;
-    border-radius: 100%;
-  }
-  & .outofstock {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: #000000bf;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    font-size: 40px;
-  }
-}
+// .card_type-product {
+//   & .sale {
+//     position: absolute;
+//     top: -30px;
+//     right: 20px;
+//     background-color: #000;
+//     color: #fff;
+//     min-width: 65px;
+//     padding: 20px 0px;
+//     text-align: center;
+//     border-radius: 100%;
+//   }
+//   & .outofstock {
+//     position: absolute;
+//     top: 0px;
+//     left: 0px;
+//     background-color: #000000bf;
+//     width: 100%;
+//     height: 100%;
+//     color: #fff;
+//     font-size: 40px;
+//   }
+// }
 
 .mainbutton {
   background-color: #000 !important;
@@ -261,16 +261,15 @@
   }
 }
 
-
-.card_type-according{
-  & .accordingtitle{
+.card_type-according {
+  & .accordingtitle {
     padding-bottom: 20px;
     border-bottom: 1px solid #000;
   }
-  & .accordingcontent{
+  & .accordingcontent {
     border-bottom: 1px solid #000;
   }
-  & .actionbutton{
+  & .actionbutton {
     background-color: #000 !important;
     padding: 10px 20px !important;
     color: #fff !important;
@@ -288,6 +287,83 @@
       color: #000 !important;
       background-color: #eee !important;
       transition: ease-in-out 300ms !important;
+    }
+  }
+}
+
+// new
+
+.card_type-product {
+  font-family: "Poppins", sans-serif !important;
+
+  & .title {
+    font-size: 13px;
+    color: #777777;
+    font-family: inherit;
+    display: block;
+    transition: ease-in-out 300ms;
+    &:hover {
+      color: $color_secondary;
+      transition: ease-in-out 300ms;
+    }
+  }
+  & .price {
+    color: $color_secondary;
+    font-size: 16px;
+    margin-top: 16px;
+    display: block;
+  }
+  & .imageContainer {
+    position: relative;
+    overflow: hidden;
+  }
+  & .imageOverlay {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    transition: ease-in-out 300ms;
+    transform: translateY(30px);
+    & .detailes a {
+      font-family: inherit;
+      background-color: $color_secondary;
+
+      display: block;
+      padding: 5px 0px;
+      font-size: 11px;
+      color: #fff;
+      font-weight: 600;
+      transition: ease-in-out 300ms;
+      &:hover {
+        background-color: #000;
+        color: #fff !important;
+
+        text-decoration: none;
+        transition: ease-in-out 300ms;
+      }
+    }
+    & .Wishlist a {
+      font-family: inherit;
+      background-color: #000;
+
+      display: block;
+      padding: 5px 0px;
+      font-size: 11px;
+      color: #fff;
+      font-weight: 600;
+      transition: ease-in-out 300ms;
+      &:hover {
+        background-color: $color_secondary;
+        color: #fff !important;
+
+        text-decoration: none;
+        transition: ease-in-out 300ms;
+      }
+    }
+  }
+  &:hover {
+    & .imageOverlay {
+      transition: ease-in-out 300ms;
+      transform: translateY(0px);
     }
   }
 }
