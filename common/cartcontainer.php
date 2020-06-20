@@ -29,18 +29,64 @@
                                 if ($_product->backorders_require_notification() && $_product->is_on_backorder($cart_item['quantity'])) {
                                     echo wp_kses_post(apply_filters('woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__('Available on backorder', 'woocommerce') . '</p>', $product_id));
                                 }
-                                ?> </span><p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p></div></div> <?php
-                    echo $cart_item['quantity'] . 'x' . WC()->cart->get_product_price($_product)
-                    ?> </div><!-- END cartItemContainer --> <?php
+                                ?> </span><span> <?php
+                                echo $cart_item['quantity'] . '<small class="x"> x </small>' . WC()->cart->get_product_price($_product)
+                                ?> </span></div></div></div><!-- END cartItemContainer --> <?php
             }
         }
         ?> <td class="product-subtotal" data-title="<?php esc_attr_e('Subtotal', 'woocommerce'); ?>"> <?php
-            echo apply_filters('woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal($_product, $cart_item['quantity']), $cart_item, $cart_item_key); // PHPCS: XSS ok.
-            ?> </td> <?php do_action('woocommerce_cart_contents'); ?> <?php else : ?> <p class="woocommerce-mini-cart__empty-message"><?php esc_html_e('No products in the cart.', 'woocommerce'); ?></p> <?php endif; ?> </div><style>.cartDropdown {
+            /**
+             * Hook: woocommerce_widget_shopping_cart_total.
+             *
+             * @hooked woocommerce_widget_shopping_cart_subtotal - 10
+             */
+            do_action('woocommerce_widget_shopping_cart_total');
+            ?> </td><p class="woocommerce-mini-cart__buttons buttons"><?php do_action('woocommerce_widget_shopping_cart_buttons'); ?></p> <?php do_action('woocommerce_cart_contents'); ?> <?php else : ?> <p class="woocommerce-mini-cart__empty-message"><?php esc_html_e('No products in the cart.', 'woocommerce'); ?></p> <?php endif; ?> </div><style>.cartDropdown {
         color: #777777;
         background: #ffffff;
         border: 3px solid #141414;
         width: 300px;
-        top: 70px !important;
+        top: 40px !important;
         right: 0px;
+    }
+
+    .cartItemContainer {
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+        padding: 10px 0px;
+    }
+
+
+    .woocommerce-mini-cart__buttons a {
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        letter-spacing: 0;
+        text-transform: lowercase !important;
+        text-align: center;
+        line-height: 16px !important;
+        padding: 0.45em 1.4em !important;
+        background-color: #fe7799;
+        display: block;
+        color: #fff !important;
+        margin-bottom: 5px;
+        transition: 300ms;
+    }
+
+    .woocommerce-mini-cart__buttons a:hover {
+        background-color: #fe7799;
+        transition: 300ms;
+
+    }
+
+    .woocommerce-mini-cart__buttons .checkout {
+        background-color: #000;
+        transition: 300ms;
+
+    }
+
+    .woocommerce-mini-cart__buttons .checkout:hover {
+        background-color: #fe7799;
+        transition: 300ms;
+
+
     }</style>

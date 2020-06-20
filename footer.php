@@ -1,4 +1,4 @@
-<div class="sc_layouts_cart_widget widget_area"><span class="sc_layouts_cart_widget_close trx_addons_icon-cancel"></span><div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"><?php woocommerce_mini_cart(); ?></div></div></div> <?php
+<?php
 // ACF FIELDS
 $bio_area = get_field('bio_area', 'options');
 $fb = get_field('facebook', 'options');
@@ -437,4 +437,8 @@ $ig = get_field('instagram', 'options');
         margin-right: 11px;
         padding: 0;
         width: 36px;
+    }
+
+    .span.woocommerce-Price-amount.amount {
+        color: #fe7799 !important;
     }</style>
