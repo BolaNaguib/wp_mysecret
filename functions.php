@@ -178,4 +178,22 @@ function pippin_login_form_shortcode( $atts, $content = null ) {
 	return $form;
 }
 add_shortcode('loginform', 'pippin_login_form_shortcode');
+
+function debug_to_console( $data ) {
+    if ( is_array( $data ) )
+     $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
+     else
+     $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
+    echo $output;
+    }
+
+// function wordpress_cart(){
+//     global $woocommerce;
+//     debug('hey');
+// return 'hey';
+// }
+// add_shortcode('cartdata', 'wordpress_cart');
+
+
+
 ?>

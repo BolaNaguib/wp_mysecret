@@ -36,9 +36,8 @@ if (post_password_required()) {
 <div class='section'>
 	<!-- START uk-container -->
 	<div class='uk-container'>
-
 		<hr>
-		<div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
+		<div id="product-<?php the_ID(); ?>" <?php wc_product_class('wooSingle', $product); ?>>
 
 			<?php
 			/**
@@ -51,6 +50,7 @@ if (post_password_required()) {
 			?>
 
 			<div class="summary entry-summary">
+				<span class="wooSingle-title"><?php the_title(); ?></span>
 				<?php
 				/**
 				 * Hook: woocommerce_single_product_summary.
