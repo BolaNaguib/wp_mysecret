@@ -139,14 +139,14 @@ $ig = get_field('instagram', 'options');
     }
 
     span.woocommerce-input-wrapper input {
-        background-color: #eeeeee40;
-        border: 1px solid #eee;
+        background-color: #fff;
+        border-bottom: 2px solid #eee;
         padding: 10px;
     }
 
     span.woocommerce-input-wrapper textarea {
-        background-color: #eeeeee40;
-        border: 1px solid #eee;
+        background-color: #fff;
+        border-bottom: 2px solid #eee;
         padding: 10px;
     }
 
@@ -156,8 +156,8 @@ $ig = get_field('instagram', 'options');
 
     input#user_pass,
     input#user_login {
-        background-color: #eeeeee40;
-        border: 1px solid #eee;
+        background-color: #fff;
+        border-bottom: 2px solid #eee;
         padding: 10px;
         display: block;
         width: 100%;
@@ -174,20 +174,23 @@ $ig = get_field('instagram', 'options');
     input.wpcf7-form-control.wpcf7-text,
     input.wpcf7-form-control.wpcf7-number,
     textarea.wpcf7-form-control.wpcf7-textarea {
-        background-color: #eeeeee40;
-        border: 1px solid #eee;
+        background-color: #fff;
+        border: none;
+        border-bottom: 2px solid #eee;
         padding: 10px;
         width: 100%;
         display: block;
+        outline: none;
     }
 
     input.wpcf7-form-control.wpcf7-submit {
-        background-color: #000;
-        padding: 10px 20px;
+        background-color: #fe8c99;
+        padding: 20px 30px;
         color: #fff;
         display: inline-block;
         border: 0px;
         margin: 10px 0px;
+        font-size: 21px;
     }
 </style>
 

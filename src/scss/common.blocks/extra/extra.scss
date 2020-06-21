@@ -23,3 +23,12 @@
   //     display: none !important;
   //   }
 }
+
+.section-header {
+  & .caption {
+    margin-top: 6px;
+    display: block;
+    letter-spacing: 1px;
+    margin-bottom: 21px;
+  }
+}

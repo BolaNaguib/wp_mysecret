@@ -1,0 +1,27 @@
+.contact-info {
+  & .contactInfoContainer {
+    margin-bottom: 20px;
+  }
+  & .title {
+    font-size: 21px;
+    color: $color_secondary;
+    display: block;
+  }
+  & .caption {
+    font-size: 16px;
+    color: #777777;
+    display: block;
+  }
+}
+
+.contactInfoSocial {
+  & a {
+    color: #d8d8d8 !important;
+    padding-right: 20px;
+    transition: 300ms;
+    &:hover {
+      color: $color_secondary !important;
+      transition: 300ms;
+    }
+  }
+}

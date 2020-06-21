@@ -9,7 +9,7 @@ else :
         'post_type' => 'product',
     ));
 endif;
-?> <!-- START section-musthave --><section class="section-musthave"><!-- START uk-container --><div class="uk-container"><!-- START uk-grid --><div class="uk-grid uk-grid-match"> <?php
+?> <!-- START section-musthave --><section class="section-musthave"><!-- START uk-container --><div class="uk-container"><!-- START uk-text-center --><div class="uk-text-center"><!-- START section-header --><div class="section-header"><h2 class="title uk-margin-remove">Must Have</h2><small class="caption">A TOUCH OF COVERAGE NEVER FELT SO SEXY</small></div><!-- END section-header --></div><!-- END uk-text-center --><!-- START uk-grid --><div class="uk-grid uk-grid-match"> <?php
             if ($query->have_posts()) :
                 while ($query->have_posts()) : $query->the_post();
                     global $product;

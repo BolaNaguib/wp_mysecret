@@ -13,9 +13,18 @@
     padding: 180px 0px;
 
     & h2 {
-      font-size: 108px;
-      color: #fff;
+      font-size: 108px !important;
+      color: #fff !important;
       line-height: 0.8em;
+    }
+    & span {
+      color: #fff !important;
+    }
+    & a {
+      color: #fff !important;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

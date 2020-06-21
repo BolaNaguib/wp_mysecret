@@ -21,14 +21,14 @@ $ig = get_field('instagram', 'options');
     }
 
     span.woocommerce-input-wrapper input {
-        background-color: #eeeeee40;
-        border: 1px solid #eee;
+        background-color: #fff;
+        border-bottom: 2px solid #eee;
         padding: 10px;
     }
 
     span.woocommerce-input-wrapper textarea {
-        background-color: #eeeeee40;
-        border: 1px solid #eee;
+        background-color: #fff;
+        border-bottom: 2px solid #eee;
         padding: 10px;
     }
 
@@ -38,8 +38,8 @@ $ig = get_field('instagram', 'options');
 
     input#user_pass,
     input#user_login {
-        background-color: #eeeeee40;
-        border: 1px solid #eee;
+        background-color: #fff;
+        border-bottom: 2px solid #eee;
         padding: 10px;
         display: block;
         width: 100%;
@@ -56,20 +56,23 @@ $ig = get_field('instagram', 'options');
     input.wpcf7-form-control.wpcf7-text,
     input.wpcf7-form-control.wpcf7-number,
     textarea.wpcf7-form-control.wpcf7-textarea {
-        background-color: #eeeeee40;
-        border: 1px solid #eee;
+        background-color: #fff;
+        border: none;
+        border-bottom: 2px solid #eee;
         padding: 10px;
         width: 100%;
         display: block;
+        outline: none;
     }
 
     input.wpcf7-form-control.wpcf7-submit {
-        background-color: #000;
-        padding: 10px 20px;
+        background-color: #fe8c99;
+        padding: 20px 30px;
         color: #fff;
         display: inline-block;
         border: 0px;
         margin: 10px 0px;
+        font-size: 21px;
     }</style><div class="uk-grid-collapse section-longcard uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div><!-- START uk-hidden card_type-product --><div class="uk-hidden card_type-product rightblock"><span class="outofstock"></span> <span class="sale"></span></div><!-- END uk-hidden card_type-product --><!-- uk-active uk-grid-collapse --> <?php wp_footer(); ?> <style>.woocs-style-1-dropdown .woocs-style-1-select>i {
         display: none !importnat;
     }
