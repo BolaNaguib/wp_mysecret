@@ -5,7 +5,16 @@ $fb = get_field('facebook', 'options');
 $tw = get_field('twitter', 'options');
 $pi = get_field('pinterest', 'options');
 $ig = get_field('instagram', 'options');
+$music = get_field('music', 'options');
 ?>
+
+
+<audio style="    position: fixed;
+    bottom: 24px;
+    left: 10px;" controls>
+    <source src="<?php echo $music['url'] ?>" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 <!-- START -->
 <footer class='section_type-footer'>
     <!-- START uk-container -->
@@ -109,7 +118,7 @@ $ig = get_field('instagram', 'options');
     <!-- END uk-container -->
 </footer>
 <!-- END  -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 <!-- <a class="uk-button uk-button-default" href="#contactform" uk-toggle>Open</a> -->
@@ -660,6 +669,124 @@ $ig = get_field('instagram', 'options');
         border: none !important;
     }
 </style>
+
+
+<style>
+    .loadercontainerx {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        background-color: #ffffff;
+        z-index: 9999999;
+    }
+
+    .loadercontainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+
+    .loader {
+        display: block;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        transform-origin: 63px 63px;
+        animation: spin 1s infinite linear;
+    }
+
+    .loader .spinner {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-width: 0px 0px 26px 26px;
+        border-style: solid;
+        border-color: transparent;
+    }
+
+    .loader .spinner.yellow {
+        border-left-color: #ffff99;
+    }
+
+    .loader .spinner.orange {
+        border-left-color: #ffcc66;
+        transform: rotate(-45deg);
+    }
+
+    .loader .spinner.red {
+        border-left-color: #ff9966;
+        transform: rotate(-90deg);
+    }
+
+    .loader .spinner.pink {
+        border-left-color: #ff6699;
+        transform: rotate(-135deg);
+    }
+
+    .loader .spinner.violet {
+        border-left-color: #cc66cc;
+        transform: rotate(-180deg);
+    }
+
+    .loader .spinner.mauve {
+        border-left-color: #cc99cc;
+        transform: rotate(-225deg);
+    }
+
+    .loader .spinner.light-yellow {
+        border-left-color: #fffad5;
+        transform: rotate(-270deg);
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+
+    .loaded {
+        display: none;
+    }
+</style>
+<!-- START loadercontainerx -->
+<div class='loadercontainerx'>
+    <!-- START loader -->
+    <div class='loadercontainer'>
+        <div class='loader'>
+            <div class='spinner yellow'></div>
+            <div class='spinner orange'></div>
+            <div class='spinner red'></div>
+            <div class='spinner pink'></div>
+            <div class='spinner violet'></div>
+            <div class='spinner mauve'></div>
+            <div class='spinner light-yellow'></div>
+        </div>
+    </div>
+
+    <!-- END loader -->
+</div>
+<!-- END loadercontainerx -->
+<script>
+    $(document).ready(function() {
+
+        setTimeout(function() {
+            $('.loadercontainerx').addClass('loaded');
+        }, 500);
+
+    });
+</script>
+
 </body>
 
 </html>

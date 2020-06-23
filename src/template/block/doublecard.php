@@ -33,11 +33,10 @@ $right_page = get_field('right_page');
                         <h2> <b>
                                 <?php echo $right_title ?>
                             </b>
-                            <br>
-                            <span>
-                                <?php echo $right_caption ?>
-                            </span>
                         </h2>
+                        <span>
+                            <?php echo $right_caption ?>
+                        </span>
                     </a>
 
                 </div>

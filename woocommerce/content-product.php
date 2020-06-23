@@ -40,8 +40,22 @@ if (empty($product) || !$product->is_visible()) {
 	<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($loop->post->ID), 'single-post-thumbnail'); ?>
 	<!-- START card_type-product -->
 	<div class='card_type-product uk-text-center'>
+		<?php $size = array_values(wc_get_product_terms($product->id, 'pa_color', array('fields' => 'ids')));
+		?>
 
+		<div class="uk-position-top-right uk-padding-small colors">
+			<?php $size = array_values(wc_get_product_terms($product->id, 'pa_color', array('fields' => 'ids')));
+			foreach ($size as $xx) {
+				echo $xx;
+				$term_id = $xx;
+				$term_vals = get_term_meta($term_id);
+				echo $term_id;
 
+				$val = $term_vals['product_attribute_color'][0];
+				echo '<span style="background-color:' . $val . ';"></span>';
+			}
+			?>
+		</div>
 		<!-- START uk-position-relative -->
 		<div class='uk-position-relative'>
 			<!-- START imageContainer -->

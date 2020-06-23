@@ -31,11 +31,16 @@ if (post_password_required()) {
 	echo get_the_password_form(); // WPCS: XSS ok.
 	return;
 }
+
 ?>
+
+
 <!-- START section -->
 <div class='section'>
 	<!-- START uk-container -->
 	<div class='uk-container'>
+		<span class="catbreadcrumbs"> <?php woocommerce_breadcrumb(); ?></span>
+
 		<hr>
 		<div id="product-<?php the_ID(); ?>" <?php wc_product_class('wooSingle', $product); ?>>
 
@@ -85,3 +90,11 @@ if (post_password_required()) {
 </div>
 <!-- END section -->
 <?php do_action('woocommerce_after_single_product'); ?>
+
+
+
+<style>
+	.catbreadcrumbs a {
+		color: #fe7799 !important;
+	}
+</style>

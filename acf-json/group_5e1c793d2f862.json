@@ -187,6 +187,41 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5ef1e71501db4",
+            "label": "Music",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ef1e71e01db5",
+            "label": "Music",
+            "name": "music",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -206,5 +241,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1590060055
+    "modified": 1592911667
 }
