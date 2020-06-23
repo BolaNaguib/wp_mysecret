@@ -25,24 +25,57 @@ if (empty($product) || !$product->is_visible()) {
 	return;
 }
 ?>
-<div <?php wc_product_class('uk-width-1-2@m uk-margin-bottom uk-text-center', $product); ?>>
+
+
+<div <?php wc_product_class('uk-width-1-5@m uk-width-1-2 uk-margin-bottom uk-text-center', $product); ?>>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
 	 *
 	 * @hooked woocommerce_template_loop_product_link_open - 10
 	 */
-	do_action('woocommerce_before_shop_loop_item');
+	// do_action('woocommerce_before_shop_loop_item');
 
 	?>
 	<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($loop->post->ID), 'single-post-thumbnail'); ?>
 	<!-- START card_type-product -->
 	<div class='card_type-product uk-text-center'>
-		<?php get_permalink($loop->post->ID); ?>
+
 
 		<!-- START uk-position-relative -->
 		<div class='uk-position-relative'>
-			<img src="<?php echo $image[0]; ?>" alt="">
+			<!-- START imageContainer -->
+			<div class='imageContainer'>
+				<img src="<?php echo $image[0]; ?>" alt="">
+				<!-- START imageOverlay -->
+				<div class='imageOverlay'>
+					<!-- START uk-grid uk-grid-match uk-grid-collapse -->
+					<div class='uk-grid uk-grid-match uk-grid-collapse'>
+						<!-- START uk-width-1-2 -->
+						<div class='uk-width-1-2'>
+							<!-- START Wishlist -->
+							<div class='Wishlist'>
+								<?php echo do_shortcode('[ti_wishlists_addtowishlist]') ?>
+							</div>
+							<!-- END Wishlist -->
+						</div>
+						<!-- END uk-width-1-2 -->
+						<!-- START uk-width-1-2 -->
+						<div class='uk-width-1-2'>
+							<!-- START detailes -->
+							<div class='detailes'>
+								<a href="<?php echo get_permalink($loop[0]->post->ID) ?>"> detailes </a>
+
+							</div>
+							<!-- END Wishlist -->
+						</div>
+						<!-- END uk-width-1-2 -->
+					</div>
+					<!-- END uk-grid uk-grid-match uk-grid-collapse -->
+				</div>
+				<!-- END imageOverlay -->
+			</div>
+			<!-- END imageContainer -->
 			<?php if ($product->stock_status != "instock") : ?>
 				<span class="outofstock uk-flex uk-flex-middle uk-flex-center">Out of Stock</span>
 			<?php endif; ?>
@@ -57,9 +90,9 @@ if (empty($product) || !$product->is_visible()) {
 
 		<!-- START uk-text-center -->
 		<div class='uk-text-center uk-margin-top'>
-			<h5 class="uk-margin-remove"><?php echo the_title(); ?></h5>
+			<span class="title"><?php echo the_title(); ?></span>
 			<?php if ($price_html = $product->get_price_html()) : ?>
-				<span class="uk-margin-bottom"><?php echo $price_html; ?></span>
+				<span class="price"><?php echo $price_html; ?></span>
 			<?php endif; ?>
 		</div>
 		<!-- END uk-text-center -->
@@ -68,15 +101,7 @@ if (empty($product) || !$product->is_visible()) {
 	</div>
 	<!-- END card_type-product -->
 
-
-
-
-
-
-
-
-
 	<?php
-	do_action('woocommerce_after_shop_loop_item');
+	// do_action('woocommerce_after_shop_loop_item');
 	?>
 </div>

@@ -582,6 +582,83 @@ $ig = get_field('instagram', 'options');
     .span.woocommerce-Price-amount.amount {
         color: #fe7799 !important;
     }
+
+    .button {
+        background-color: #fe7799 !important;
+        color: #fff !important;
+        font-weight: 400 !important;
+        letter-spacing: 1px;
+        border-radius: 0px !important;
+    }
+
+    .button:hover {
+        background-color: #000 !important;
+        color: #fff !important;
+        font-weight: 400 !important;
+        letter-spacing: 1px;
+        border-radius: 0px !important;
+    }
+
+    .woocommerce input[type=number]::-webkit-inner-spin-button,
+    .woocommerce input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    .woocommerce input[type=number].qty {
+        -moz-appearance: textfield;
+    }
+
+    .woocommerce-page div.product form.cart div.quantity {
+        border-radius: 0px !important;
+    }
+
+    .woocommerce .quantity {
+        /* border: 2px solid #eee !important; */
+        width: 128px !important;
+        display: inline-block;
+    }
+
+    .woocommerce .quantity input.qty,
+    .woocommerce .quantity .minus,
+    .woocommerce .quantity .plus {
+        line-height: 16px;
+        height: 40px !important;
+        color: inherit !important;
+        padding: 0 !important;
+        float: left;
+        border-radius: 0px !important;
+    }
+
+    .woocommerce .quantity .minus,
+    .woocommerce .quantity .plus {
+        background-color: #fe7799;
+        color: #fff !important;
+        border: none !important;
+        cursor: pointer;
+        width: 40px !important;
+        transition: 300ms;
+
+    }
+
+    .woocommerce .quantity .minus:hover,
+    .woocommerce .quantity .plus:hover {
+        background-color: #000 !important;
+        transition: 300ms;
+    }
+
+    .woocommerce .quantity input.qty {
+        /* border-left: 2px solid #eee !important;
+        border-right: 2px solid #eee !important; */
+        width: 44px !important;
+        border: 1px solid #fe7799;
+        height: 38px !important;
+    }
+
+    div.quantity.hidden {
+        border: none !important;
+    }
 </style>
 </body>
 
