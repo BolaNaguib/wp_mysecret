@@ -27,7 +27,7 @@ $music = get_field('music', 'options');
             <div class='uk-width-1-2@m'>
                 <!-- START card_type-footercaption -->
                 <div class='card_type-footercaption'>
-                    <h5>DiNouchy</h5>
+                    <h5>My-Secret</h5>
                     <p>
                         <small>
                             <?php echo $bio_area; ?>
@@ -671,118 +671,14 @@ $music = get_field('music', 'options');
 </style>
 
 
-<style>
-    .loadercontainerx {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        background-color: #ffffff;
-        z-index: 9999999;
-    }
 
-    .loadercontainer {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -50px;
-        margin-left: -50px;
-    }
-
-    .loader {
-        display: block;
-        width: 100px;
-        height: 100px;
-        position: relative;
-        transform-origin: 63px 63px;
-        animation: spin 1s infinite linear;
-    }
-
-    .loader .spinner {
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-width: 0px 0px 26px 26px;
-        border-style: solid;
-        border-color: transparent;
-    }
-
-    .loader .spinner.yellow {
-        border-left-color: #ffff99;
-    }
-
-    .loader .spinner.orange {
-        border-left-color: #ffcc66;
-        transform: rotate(-45deg);
-    }
-
-    .loader .spinner.red {
-        border-left-color: #ff9966;
-        transform: rotate(-90deg);
-    }
-
-    .loader .spinner.pink {
-        border-left-color: #ff6699;
-        transform: rotate(-135deg);
-    }
-
-    .loader .spinner.violet {
-        border-left-color: #cc66cc;
-        transform: rotate(-180deg);
-    }
-
-    .loader .spinner.mauve {
-        border-left-color: #cc99cc;
-        transform: rotate(-225deg);
-    }
-
-    .loader .spinner.light-yellow {
-        border-left-color: #fffad5;
-        transform: rotate(-270deg);
-    }
-
-    @keyframes spin {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(-360deg);
-        }
-    }
-
-    .loaded {
-        display: none;
-    }
-</style>
-<!-- START loadercontainerx -->
-<div class='loadercontainerx'>
-    <!-- START loader -->
-    <div class='loadercontainer'>
-        <div class='loader'>
-            <div class='spinner yellow'></div>
-            <div class='spinner orange'></div>
-            <div class='spinner red'></div>
-            <div class='spinner pink'></div>
-            <div class='spinner violet'></div>
-            <div class='spinner mauve'></div>
-            <div class='spinner light-yellow'></div>
-        </div>
-    </div>
-
-    <!-- END loader -->
-</div>
-<!-- END loadercontainerx -->
 <script>
     $(document).ready(function() {
 
         setTimeout(function() {
+            $('body').show();
             $('.loadercontainerx').addClass('loaded');
-        }, 500);
+        }, 1000);
 
     });
 </script>

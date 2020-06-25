@@ -20,8 +20,11 @@ if (!defined('ABSPATH')) {
     exit;
 }
 ?>
+
+<!-- loop-start -->
 <!-- START section -->
 <div class="section">
     <!-- START uk-container -->
     <div class="uk-container">
+
         <div class="products uk-grid">

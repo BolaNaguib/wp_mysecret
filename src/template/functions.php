@@ -96,7 +96,9 @@ function my_acf_init()
         add_guttenberg_block('musthave');
         add_guttenberg_block('categories');
         add_guttenberg_block('contact');
-
+        add_guttenberg_block('brands');
+        add_guttenberg_block('testimonials');
+        
         // add_guttenberg_block('gridicon');
         // add_guttenberg_block('grid');
         // add_guttenberg_block('card');
@@ -106,7 +108,7 @@ function my_acf_init()
         // add_guttenberg_block('heroslider');
         // add_guttenberg_block('according');
         // add_guttenberg_block('contactform');
-        // // add_guttenberg_block('testimonials');
+        // add_guttenberg_block('testimonials');
         // add_guttenberg_block('quote');
         // add_guttenberg_block('certification');
         // add_guttenberg_block('cta');

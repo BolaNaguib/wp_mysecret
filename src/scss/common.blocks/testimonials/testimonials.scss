@@ -1,0 +1,19 @@
+.section-testimonials {
+  background-color: #000;
+  padding: 75px 0px;
+  color: #fff;
+  & * {
+    color: #fff !important;
+  }
+}
+
+.testimonials-card {
+  padding: 10px 50px;
+  position: relative;
+  & svg {
+    width: 10px !important;
+    position: absolute;
+    left: 28px;
+    top: 35px;
+  }
+}

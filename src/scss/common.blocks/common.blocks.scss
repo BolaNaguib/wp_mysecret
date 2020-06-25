@@ -9,6 +9,9 @@
 @import "longcard/longcard";
 @import "categories/categories";
 @import "contacts/contacts";
+@import "brands/brands";
+@import "testimonials/testimonials";
+
 @import "extra/extra";
 
 .wp-block {
@@ -17,53 +20,6 @@
 
 .uk-sticky-placeholder {
   height: unset !important;
-}
-
-.leftmenu {
-  position: absolute;
-  left: 15px;
-  top: 75px;
-  @include mediaquery_size_m() {
-    left: 40px;
-  }
-  & .button {
-    background-color: #fff;
-    border: 1px solid #eee;
-    padding: 5px 15px;
-    border-radius: 5px;
-    & svg {
-      color: #fd5a0e;
-      width: 20px;
-    }
-    & span {
-      color: #000000;
-      margin-left: 10px;
-      font-size: 18px;
-    }
-  }
-}
-.rightmenu {
-  position: absolute;
-  right: 15px;
-  top: 75px;
-  @include mediaquery_size_m() {
-    right: 40px;
-  }
-  & .button {
-    background-color: #fff;
-    border: 1px solid #eee;
-    padding: 5px 15px;
-    border-radius: 5px;
-    & svg {
-      color: #fd5a0e;
-      width: 20px;
-    }
-    & span {
-      color: #000000;
-      margin-right: 10px;
-      font-size: 18px;
-    }
-  }
 }
 
 .callbutton {

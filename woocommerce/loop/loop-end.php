@@ -25,3 +25,4 @@ if (!defined('ABSPATH')) {
 <!-- END uk-container -->
 </div>
 <!-- END section -->
+<!-- loopend -->

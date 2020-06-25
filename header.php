@@ -42,4 +42,29 @@
             }),
             jQuery(document).ajaxComplete(function() {
                 PbStyleQuantite()
-            });</script></head><body <?php body_class(); ?>> <?php include get_template_directory() . '/common/topmenu.php'; ?> <?php include get_template_directory() . '/common/mainmenudesktop.php'; ?> <?php include get_template_directory() . '/common/loginmodal.php'; ?> <!-- </div> --></body></html>
+            });</script></head><body <?php body_class(); ?>><style>.loadercontainerx {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            background-color: #ffffff;
+            z-index: 9999999;
+            display: block;
+            transition: 300ms;
+
+        }
+
+        .loader {
+            width: 100%;
+            height: 100%;
+            background-color: #f9e7dd;
+        }
+
+        .loader img {
+            border: 2px solid #fff;
+        }
+
+        .loaded {
+            display: none;
+            transition: 300ms;
+        }</style><!-- START loadercontainerx --><div class="loadercontainerx"><!-- START loader --><div class="loader uk-flex-middle uk-flex uk-flex-center"><img src="<?php echo get_template_directory_uri() ?>/images/loader.gif" alt=""></div><!-- END loader --></div><!-- END loadercontainerx --> <?php include get_template_directory() . '/common/topmenu.php'; ?> <?php include get_template_directory() . '/common/mainmenudesktop.php'; ?> <?php include get_template_directory() . '/common/loginmodal.php'; ?> <!-- </div> --></body></html>
