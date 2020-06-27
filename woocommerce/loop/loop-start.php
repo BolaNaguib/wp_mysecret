@@ -28,3 +28,8 @@ if (!defined('ABSPATH')) {
     <div class="uk-container">
 
         <div class="products uk-grid">
+            <!-- START uk-width-1-3 -->
+            <div class='uk-width-1-3'>
+                <?php dynamic_sidebar('shop'); ?>
+            </div>
+            <!-- END uk-width-1-3 -->
