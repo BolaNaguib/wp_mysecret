@@ -47,6 +47,7 @@ HELLO WORLD
     do_action('woocommerce_archive_description');
     ?>
 </header>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 <?php
 if (woocommerce_product_loop()) {
 
@@ -58,7 +59,7 @@ if (woocommerce_product_loop()) {
      * @hooked woocommerce_catalog_ordering - 30
      */
     do_action('woocommerce_before_shop_loop');
-
+    echo 'xxxxxxxxxxxxxxxxxx';
     woocommerce_product_loop_start();
 
     if (wc_get_loop_prop('total')) {

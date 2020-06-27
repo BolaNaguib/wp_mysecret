@@ -20,6 +20,11 @@ if (!defined('ABSPATH')) {
     exit;
 }
 ?>
+
+</div>
+<!-- END uk-grid -->
+</div>
+<!-- END uk-width-3-4 -->
 </div>
 </div>
 <!-- END uk-container -->
