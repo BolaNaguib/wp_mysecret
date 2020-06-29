@@ -19,7 +19,9 @@
 defined('ABSPATH') || exit;
 
 global $product;
+// Get Product ID
 
+$ID = $product->get_id();
 // Ensure visibility.
 if (empty($product) || !$product->is_visible()) {
 	return;
@@ -37,14 +39,14 @@ if (empty($product) || !$product->is_visible()) {
 	// do_action('woocommerce_before_shop_loop_item');
 
 	?>
-	<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($loop->post->ID), 'single-post-thumbnail'); ?>
+	<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($ID), 'single-post-thumbnail'); ?>
 	<!-- START card_type-product -->
 	<div class='card_type-product uk-text-center'>
-		<?php $size = array_values(wc_get_product_terms($product->id, 'pa_color', array('fields' => 'ids')));
+		<?php $size = array_values(wc_get_product_terms($ID, 'pa_color', array('fields' => 'ids')));
 		?>
 
 		<div class="uk-position-top-right uk-padding-small colors">
-			<?php $size = array_values(wc_get_product_terms($product->id, 'pa_color', array('fields' => 'ids')));
+			<?php $size = array_values(wc_get_product_terms($ID, 'pa_color', array('fields' => 'ids')));
 			foreach ($size as $xx) {
 				echo $xx;
 				$term_id = $xx;
@@ -90,13 +92,7 @@ if (empty($product) || !$product->is_visible()) {
 				<!-- END imageOverlay -->
 			</div>
 			<!-- END imageContainer -->
-			<?php if ($product->stock_status != "instock") : ?>
-				<span class="outofstock uk-flex uk-flex-middle uk-flex-center">Out of Stock</span>
-			<?php endif; ?>
-			<?php if ($product->sale_price != "") : ?>
-				<span class="sale">Sale</span>
 
-			<?php endif; ?>
 
 		</div>
 		<!-- END uk-position-relative -->

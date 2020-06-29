@@ -23,11 +23,5 @@ if (!defined('ABSPATH')) {
 
 </div>
 <!-- END uk-grid -->
-</div>
-<!-- END uk-width-3-4 -->
-</div>
-</div>
-<!-- END uk-container -->
-</div>
-<!-- END section -->
+
 <!-- loopend -->

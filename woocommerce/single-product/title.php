@@ -20,5 +20,5 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-the_title('<h1 class="product_title entry-title">', '</h1>');
-sadasdasdasd
+
+the_title('<span class="wooSingle-title">', '</span>');

@@ -106,6 +106,7 @@
     <!-- END loadercontainerx -->
     <?php include get_template_directory() . '/common/topmenu.php'; ?>
     <?php include get_template_directory() . '/common/mainmenudesktop.php'; ?>
+    <?php include get_template_directory() . '/common/mobilemenu.php'; ?>
     <?php include get_template_directory() . '/common/loginmodal.php'; ?>
 
 

@@ -11,7 +11,7 @@ else :
 endif;
 ?>
 <!-- START section-testimonials -->
-<section class='section-testimonials'>
+<section class='section-testimonials full-width'>
     <!-- START uk-container -->
     <div class='uk-container'>
         <!-- START uk-text-center -->

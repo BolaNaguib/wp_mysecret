@@ -1,5 +1,5 @@
 <!-- START mainmenu_desktop -->
-<div class='mainmenu_desktop'>
+<div class='mainmenu_desktop uk-visible@m'>
     <!-- START uk-container -->
     <div class='uk-container'>
         <!-- START uk-text-center -->
@@ -10,11 +10,11 @@
         </div>
         <!-- END uk-text-center -->
         <!-- START mainmenua_navbar -->
-        <div class='mainmenua_navbar'>
+        <div class='mainmenua_navbar  '>
             <nav uk-navbar>
                 <div class="uk-navbar-left">
 
-                    <ul class="uk-navbar-nav uk-visible@m">
+                    <ul class="uk-navbar-nav">
                         <?php if (have_rows('main_menu', 'options')) : ?>
                             <?php while (have_rows('main_menu', 'options')) : the_row(); ?>
                                 <?php $post = get_sub_field('main_menu_page');
@@ -43,7 +43,7 @@
                                                             <li>
                                                                 <small>
                                                                     <?php if ($term) : ?>
-                                                                        <a class="nav__link-submenu" href="<?php echo esc_url(get_term_link($term)); ?>"> <?php echo esc_html($term->name); ?> <?php the_title(); ?>
+                                                                        <a class="nav__link-submenu" href="<?php echo esc_url(get_term_link($term)); ?>"> <?php echo esc_html($term->name); ?>
 
                                                                         </a>
                                                                     <?php endif; ?>
@@ -56,7 +56,7 @@
 
                                                                                 <li>
                                                                                     <small>
-                                                                                        <a class="nav__link-submenu" href="<?php the_permalink(); ?>"> test <?php the_title(); ?> </a>
+                                                                                        <a class="nav__link-submenu" href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
                                                                                     </small></li>
                                                                             </ul>
                                                                         </div>
@@ -86,15 +86,8 @@
 
                     </ul>
                 </div>
-                <div class="uk-navbar-right">
-                    <!-- <form class="search uk-search uk-search-navbar uk-width-1-1" method="get" action="<?php echo home_url('/'); ?>" role="search">
-            <input
-             placeholder="<?php echo esc_attr_x('Search …', 'placeholder') ?>" 
-             value="<?php echo get_search_query() ?>" 
-             name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" 
-             />
-            <button style="    display: none;" type="submit" role="button" class="btn btn-default right" /><span class="glyphicon glyphicon-search white"></span></button>
-        </form> -->
+                <div class="uk-navbar-right"> 
+                  
                     <form class="uk-search searchBotton" method="get" action="<?php echo home_url('/'); ?>" role="search">
                         <button class="uk-search-icon-flip" uk-search-icon type="submit" role="button" class="btn btn-default right">
                         </button>

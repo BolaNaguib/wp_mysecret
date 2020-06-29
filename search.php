@@ -29,17 +29,7 @@ get_header('shop');
  */
 // do_action('woocommerce_before_main_content');
 
-?>
-<!-- archive-product -->
-<!-- START uk-container -->
-<div class='uk-container'>
-
-    <!-- <header class="woocommerce-products-header">
-    <?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
-        <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-    <?php endif; ?>
-
-    <?php
+?> <!-- archive-product --><!-- START uk-container --><div class="uk-container"><!-- <header class="woocommerce-products-header"> <?php if (apply_filters('woocommerce_show_page_title', true)) : ?> <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1> <?php endif; ?> <?php
     /**
      * Hook: woocommerce_archive_description.
      *
@@ -47,11 +37,7 @@ get_header('shop');
      * @hooked woocommerce_product_archive_description - 10
      */
     do_action('woocommerce_archive_description');
-    ?>
-</header> -->
-
-
-    <?php
+    ?> </header> --> <?php
     if (woocommerce_product_loop()) {
 
         /**
@@ -62,18 +48,7 @@ get_header('shop');
          * @hooked woocommerce_catalog_ordering - 30
          */
         do_action('woocommerce_before_shop_loop');
-    ?>
-        <!-- START uk-grid -->
-        <div class='uk-grid'>
-            <!-- START uk-width-1-4@m -->
-            <div class='uk-width-1-4@m'>
-                <?php dynamic_sidebar('shop'); ?>
-
-            </div>
-            <!-- END uk-width-1-4@m -->
-            <!-- START uk-width-3-4@m -->
-            <div class='uk-width-3-4@m'>
-            <?php
+    ?> <!-- START uk-grid --><div class="uk-grid"><!-- START uk-width-1-4@m --><div class="uk-width-1-4@m"> <?php dynamic_sidebar('shop'); ?> </div><!-- END uk-width-1-4@m --><!-- START uk-width-3-4@m --><div class="uk-width-3-4@m"> <?php
             woocommerce_product_loop_start();
 
             if (wc_get_loop_prop('total')) {
@@ -112,13 +87,7 @@ get_header('shop');
          * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
          */
         do_action('woocommerce_after_main_content');
-            ?>
-
-            </div>
-            <!-- END uk-width-3-4@m -->
-        </div>
-        <!-- END uk-grid -->
-        <?php
+            ?> </div><!-- END uk-width-3-4@m --></div><!-- END uk-grid --> <?php
         /**
          * Hook: woocommerce_sidebar.
          *
@@ -127,6 +96,4 @@ get_header('shop');
         // do_action('woocommerce_sidebar');
 
         get_footer('shop');
-        ?>
-</div>
-<!-- END uk-container -->
+        ?> </div><!-- END uk-container -->

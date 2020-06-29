@@ -1,4 +1,5 @@
 <?php
+add_theme_support( 'woocommerce' );
 
 function add_enqueue_styles()
 {
@@ -206,15 +207,12 @@ function arphabet_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'shop',
 		'id'            => 'shop',
-		'before_widget' => '<div>',
+		'before_widget' => '<div class="widgetcontainer">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<span class="widgettitle">',
+		'after_title'   => '</span>',
 	) );
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
-
-
-
 ?>

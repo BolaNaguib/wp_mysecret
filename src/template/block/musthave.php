@@ -30,9 +30,11 @@ endif;
             if ($query->have_posts()) :
                 while ($query->have_posts()) : $query->the_post();
                     global $product;
+                    $id = $product->get_id();
+
             ?>
 
-                    <div <?php wc_product_class('uk-width-1-5@m uk-margin-bottom uk-text-center', $product); ?>>
+                    <div <?php wc_product_class('uk-width-1-5@m uk-width-1-2 uk-margin-bottom uk-text-center', $product); ?>>
                         <?php
                         /**
                          * Hook: woocommerce_before_shop_loop_item.
@@ -42,7 +44,7 @@ endif;
                         // do_action('woocommerce_before_shop_loop_item');
 
                         ?>
-                        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($loop->post->ID), 'single-post-thumbnail'); ?>
+                        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'single-post-thumbnail'); ?>
                         <!-- START card_type-product -->
                         <div class='card_type-product uk-text-center'>
 
@@ -69,8 +71,7 @@ endif;
                                             <div class='uk-width-1-2'>
                                                 <!-- START detailes -->
                                                 <div class='detailes'>
-                                                    <a href="<?php echo get_permalink($loop[0]->post->ID) ?>"> detailes </a>
-
+                                                    <a href="<?php echo get_permalink($id) ?>"> detailes </a>
                                                 </div>
                                                 <!-- END Wishlist -->
                                             </div>
@@ -81,13 +82,7 @@ endif;
                                     <!-- END imageOverlay -->
                                 </div>
                                 <!-- END imageContainer -->
-                                <?php if ($product->stock_status != "instock") : ?>
-                                    <span class="outofstock uk-flex uk-flex-middle uk-flex-center">Out of Stock</span>
-                                <?php endif; ?>
-                                <?php if ($product->sale_price != "") : ?>
-                                    <span class="sale">Sale</span>
 
-                                <?php endif; ?>
 
                             </div>
                             <!-- END uk-position-relative -->

@@ -524,6 +524,60 @@ $music = get_field('music', 'options');
 
     div.quantity.hidden {
         border: none !important;
+    }</style><style>.widgetcontainer {
+        margin-bottom: 40px;
+    }
+
+    .widgettitle {
+        font-size: 24px;
+        margin-bottom: 24px;
+        display: block;
+    }
+
+    .woocommerce .widget_price_filter .ui-slider-horizontal {
+        height: 5px;
+    }
+
+    .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+        background-color: #fe7799;
+    }
+
+    .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+        background-color: #fe7799;
+        top: -6px;
+    }
+
+    li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term {
+        display: inline-block;
+        background-color: #eee;
+        margin-right: 10px;
+        padding: 5px 10px !important;
+        font-size: 13px;
+    }
+
+    .li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term a {
+        color: #fe7799 !important;
+    }
+
+    li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen {
+        background-color: #fe7799;
+    }
+
+    li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen a {
+        color: #fff !important;
+    }
+
+    .full-width .uk-container {
+        padding: 0px 22px;
+    }
+
+    .full-width {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
     }</style><script>$(document).ready(function() {
 
         setTimeout(function() {

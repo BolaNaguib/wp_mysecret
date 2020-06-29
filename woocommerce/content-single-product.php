@@ -55,7 +55,7 @@ if (post_password_required()) {
 			?>
 
 			<div class="summary entry-summary">
-				<span class="wooSingle-title"><?php the_title(); ?></span>
+				<!-- <span class="wooSingle-title"><?php the_title(); ?></span> -->
 				<?php
 				/**
 				 * Hook: woocommerce_single_product_summary.

@@ -5,7 +5,7 @@
            <!-- START uk-grid -->
            <div class='uk-grid' uk-grid="uk-margin">
                <!-- START uk-width-1-3@m -->
-               <div class='uk-width-1-3@m ses uk-text-center uk-text-left@m'>
+               <div class='uk-width-1-3@m  ses uk-text-center uk-text-left@m'>
                    <span class="uk-margin-right"> <svg width="10px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12">
                            <path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" class=""></path>
                        </svg>
@@ -22,7 +22,7 @@
 
 
                <!-- START UK-WIDTH-1-3@m uk-flex uk-flex -->
-               <div class='uk-width-1-3@m uk-flex uk-flex-center'>
+               <div class='uk-width-1-3@m  uk-visible@m uk-flex uk-flex-center'>
                    <!-- START topnavmenu -->
                    <div class='topnavmenu'>
                        <?php $postx = get_field('topmenu_navbar', 'options');
@@ -66,7 +66,7 @@
                <!-- END UK-WIDTH-1-3@m uk-flex uk-flex-right -->
 
                <!-- START uk-width-1-3@m -->
-               <div class='uk-width-1-3@m uk-flex uk-flex-right'>
+               <div class='uk-width-1-3@m uk-width-1-1 uk-flex uk-flex-right@m uk-flex-center'>
                    <!-- START uk-grid uk-child-width-auto -->
                    <div class='uk-grid uk-child-width-auto'>
                        <!-- START div -->
