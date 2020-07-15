@@ -2,6 +2,7 @@
 
 <?php get_header(); ?>
 <?php $hero_wallpaper = get_field('hero_wallpaper');
+$hero_bg = $hero_wallpaper ? $hero_wallpaper : 'https://gl-images.condecdn.net/image/o7eLjdokLWq/crop/2040/0.46875/f/gettyimages-471453081_sf.jpg'
 $hero_title = get_field('hero_title');
 $hero_caption = get_field('hero_caption');
 ?>
