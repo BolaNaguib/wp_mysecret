@@ -13,7 +13,7 @@
                         <a class="uk-accordion-title" href="#"><?php echo $faq_title ?></a>
                         <div class="uk-accordion-content">
                             <p>
-                                <?php echo $faq_title ?>
+                                <?php echo $faq_content ?>
                             </p>
                         </div>
                     </li>
