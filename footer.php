@@ -580,6 +580,10 @@ $music = get_field('music', 'options');
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
+    }
+
+    .mainmenua_navbar {
+        padding: 25px 0px 25px 0px;
     }</style><script>$(document).ready(function() {
 
         setTimeout(function() {
