@@ -2,17 +2,18 @@
 <div class='mainmenu_desktop uk-visible@m'>
     <!-- START uk-container -->
     <div class='uk-container'>
-        <!-- START uk-text-center -->
-        <div class='uk-text-center' style="padding:30px 0px">
-            <a href="/">
-                <img loading="lazy" style="max-height:110px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>">
-            </a>
-        </div>
-        <!-- END uk-text-center -->
         <!-- START mainmenua_navbar -->
         <div class='mainmenua_navbar  '>
             <nav uk-navbar>
                 <div class="uk-navbar-left">
+                    <a href="/">
+
+                        <a class="nav__link" href="<?php the_permalink($post); ?>">
+                            My Secret</a>
+                        <!-- <img loading="lazy" style="max-height:110px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>"> -->
+                    </a>
+                </div>
+                <div class="uk-navbar-center">
 
                     <ul class="uk-navbar-nav">
                         <?php if (have_rows('main_menu', 'options')) : ?>
@@ -85,9 +86,11 @@
                         <?php endif; ?>
 
                     </ul>
+
+
                 </div>
-                <div class="uk-navbar-right"> 
-                  
+                <div class="uk-navbar-right">
+
                     <form class="uk-search searchBotton" method="get" action="<?php echo home_url('/'); ?>" role="search">
                         <button class="uk-search-icon-flip" uk-search-icon type="submit" role="button" class="btn btn-default right">
                         </button>
