@@ -22,6 +22,9 @@
 
 .section_type-normal {
   position: relative;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
   & * {
     color: #fff !important;
     text-transform: uppercase;
