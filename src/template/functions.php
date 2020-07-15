@@ -99,6 +99,7 @@ function my_acf_init()
         add_guttenberg_block('contact');
         add_guttenberg_block('brands');
         add_guttenberg_block('testimonials');
+        add_guttenberg_block('faq');
         
         // add_guttenberg_block('gridicon');
         // add_guttenberg_block('grid');

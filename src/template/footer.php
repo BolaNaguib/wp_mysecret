@@ -11,7 +11,7 @@ $music = get_field('music', 'options');
 
 <audio style="    position: fixed;
     bottom: 24px;
-    left: 10px;" controls autoplay>
+    left: 10px;" controls>
     <source src="<?php echo $music['url'] ?>" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
