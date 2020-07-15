@@ -21,17 +21,22 @@ $hero_caption = get_field('hero_caption');
     <!-- END uk-container -->
 
 </section>
-<!-- START uk-container -->
-<div class='uk-container'>
-    <?php if (have_posts()) : ?>
-        <?php /* Start the Loop */ ?>
-        <?php while (have_posts()) : the_post(); ?>
-            <?php the_content(); ?>
-        <?php endwhile; ?>
-    <?php else : ?>
-    <?php endif; ?>
-</div>
-<!-- END uk-container -->
+<!-- START section -->
+<div class='section'>
 
+    <!-- START uk-container -->
+    <div class='uk-container'>
+        <?php if (have_posts()) : ?>
+            <?php /* Start the Loop */ ?>
+            <?php while (have_posts()) : the_post(); ?>
+                <?php the_content(); ?>
+            <?php endwhile; ?>
+        <?php else : ?>
+        <?php endif; ?>
+    </div>
+    <!-- END uk-container -->
+
+</div>
+<!-- END section -->
 
 <?php get_footer(); ?>
