@@ -82,7 +82,8 @@
         .loader {
             width: 100%;
             height: 100%;
-            background-color: #f9e7dd;
+            background-color: #ffd7e1;
+
         }
 
         .loader img {
