@@ -57,7 +57,7 @@
         .loader {
             width: 100%;
             height: 100%;
-            background-color: #ffd7e1;
+            background-color: #ffc6df;
 
         }
 
