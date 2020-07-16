@@ -53,7 +53,10 @@ endif;
                             <div class='uk-position-relative'>
                                 <!-- START imageContainer -->
                                 <div class='imageContainer'>
-                                    <img src="<?php echo $image[0]; ?>" alt="">
+                                    <a href="<?php echo get_permalink($id) ?>">
+
+                                        <img src="<?php echo $image[0]; ?>" alt="">
+                                    </a>
                                     <!-- START imageOverlay -->
                                     <div class='imageOverlay'>
                                         <!-- START uk-grid uk-grid-match uk-grid-collapse -->
