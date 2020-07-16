@@ -39,6 +39,7 @@ if (empty($product) || !$product->is_visible()) {
 	// do_action('woocommerce_before_shop_loop_item');
 
 	?>
+
 	<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($ID), 'single-post-thumbnail'); ?>
 	<!-- START card_type-product -->
 	<div class='card_type-product uk-text-center'>
