@@ -9,3 +9,15 @@
 
     </div>
 </div>
+<style>
+    input#user_login,
+    input#user_pass {
+        background-color: #f8f8f8;
+        border: 2px solid #eeee;
+        border-bottom: 2px solid #fe7799;
+        padding: 10px;
+        width: 100%;
+        display: block;
+        outline: none;
+    }
+</style>
