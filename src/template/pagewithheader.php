@@ -7,7 +7,7 @@ $hero_title = get_field('hero_title');
 $hero_caption = get_field('hero_caption');
 ?>
 
-<section class="section_type-normal" style="background-image: url('<?php echo $hero_bg; ?>');">
+<section class="     section_type-normal" style="background-image: url('<?php echo $hero_bg; ?>');">
     <!-- START uk-container -->
     <div class='uk-container uk-position-relative uk-text-center'>
         <?php if ($hero_title) : ?>
