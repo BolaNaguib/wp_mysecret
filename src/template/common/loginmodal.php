@@ -12,12 +12,19 @@
 <style>
     input#user_login,
     input#user_pass {
-        background-color: #f8f8f8;
         border: 2px solid #eeee;
+        background-color: #efe6e838;
         border-bottom: 2px solid #fe7799;
         padding: 10px;
         width: 100%;
         display: block;
         outline: none;
+    }
+
+    input#wp-submit {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px !important;
+        cursor: pointer;
     }
 </style>
