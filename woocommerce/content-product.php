@@ -23,6 +23,7 @@ global $product;
 
 $ID = $product->get_id();
 $image = wp_get_attachment_image_src(get_post_thumbnail_id($ID), 'single-post-thumbnail');
+$attachment_ids = $product->get_gallery_image_ids($ID);
 
 // Ensure visibility.
 if (empty($product) || !$product->is_visible()) {
@@ -65,7 +66,9 @@ if (empty($product) || !$product->is_visible()) {
 			<!-- START imageContainer -->
 			<div class='imageContainer'>
 				<a href="<?php echo get_permalink($ID) ?>">
+
 					<img src="<?php echo $image[0]; ?>" alt="">
+					<img class="imageHover" style="  " src="<?php echo wp_get_attachment_url($attachment_ids[0]) ?>" alt="">
 				</a>
 				<!-- START imageOverlay -->
 				<div class='imageOverlay'>

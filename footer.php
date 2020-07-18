@@ -584,6 +584,22 @@ $music = get_field('music', 'options');
 
     .mainmenua_navbar {
         padding: 25px 0px 25px 0px;
+    }
+
+    .imageContainer .imageHover {
+        position: absolute;
+        top: 0px;
+        height: auto;
+        max-width: 100%;
+        opacity: 0;
+        left: 0px;
+        transition: 300ms;
+
+    }
+
+    .imageContainer:hover .imageHover {
+        transition: 300ms;
+        opacity: 1;
     }</style><script>$(document).ready(function() {
 
         setTimeout(function() {
