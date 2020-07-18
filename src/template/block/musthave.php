@@ -31,6 +31,8 @@ endif;
                 while ($query->have_posts()) : $query->the_post();
                     global $product;
                     $id = $product->get_id();
+                    $attachment_ids = $product->get_gallery_image_ids($ID);
+                    $image = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'single-post-thumbnail');
 
             ?>
 
@@ -44,7 +46,6 @@ endif;
                         // do_action('woocommerce_before_shop_loop_item');
 
                         ?>
-                        <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'single-post-thumbnail'); ?>
                         <!-- START card_type-product -->
                         <div class='card_type-product uk-text-center'>
 
@@ -56,6 +57,8 @@ endif;
                                     <a href="<?php echo get_permalink($id) ?>">
 
                                         <img src="<?php echo $image[0]; ?>" alt="">
+                                        <img class="imageHover" style="  " src="<?php echo wp_get_attachment_url($attachment_ids[0]) ?>" alt="">
+
                                     </a>
                                     <!-- START imageOverlay -->
                                     <div class='imageOverlay'>
