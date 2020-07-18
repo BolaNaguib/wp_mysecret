@@ -34,11 +34,48 @@ if (post_password_required()) {
 
 ?>
 
+<?php
+// ACF FIELDS 
+$block_title = get_field('block_title');
+$block_background = get_field('block_background');
+$modal_image = get_field('modal_image');
 
+?>
+<style>
+	.sizeTable {
+		margin-bottom: 25px;
+	}
+
+	.sizeTable h1 {
+		transition: 300ms;
+	}
+
+	.sizeTable:hover h1 {
+		color: #fe7799 !important;
+		transition: 300ms;
+	}
+</style>
 <!-- START section -->
-<div class='section'>
+<div class='section' style="padding-top: 0px;">
 	<!-- START uk-container -->
 	<div class='uk-container'>
+		<?php if ($modal_image) : ?>
+			<a href="#modal-media-image" class="" uk-toggle>
+				<section class="section section_type-normal sizeTable" style="background-image: url('<?php echo $block_background['url'] ?>');">
+					<!-- START uk-container -->
+					<div class="uk-container uk-position-relative uk-text-center">
+						<h1> <?php echo $block_title ?> </h1>
+					</div><!-- END uk-container -->
+				</section>
+			</a>
+			<div id="modal-media-image" class="uk-flex-top" uk-modal>
+				<div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+					<button class="uk-modal-close-outside" type="button" uk-close></button>
+					<img src="<?php echo $modal_image['url'] ?>" alt="">
+				</div>
+			</div>
+		<?php endif; ?>
+
 		<span class="catbreadcrumbs"> <?php woocommerce_breadcrumb(); ?></span>
 
 		<hr>
