@@ -14,7 +14,7 @@ endif;
                 while ($query->have_posts()) : $query->the_post();
                     global $product;
                     $id = $product->get_id();
-                    $attachment_ids = $product->get_gallery_image_ids($ID);
+                    $attachment_ids = $product->get_gallery_image_ids($id);
                     $image = wp_get_attachment_image_src(get_post_thumbnail_id($id), 'single-post-thumbnail');
 
             ?> <div <?php wc_product_class('uk-width-1-5@m uk-width-1-2 uk-margin-bottom uk-text-center', $product); ?>> <?php
