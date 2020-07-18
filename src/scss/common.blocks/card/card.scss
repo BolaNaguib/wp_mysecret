@@ -17,6 +17,8 @@
     }
   }
   &:hover {
+    cursor: pointer;
+
     & .iconcontainer {
       box-shadow: 0px 0px 0px 10px #00000012;
       transition: ease-in-out 300ms;

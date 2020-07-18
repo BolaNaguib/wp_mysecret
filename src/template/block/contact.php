@@ -9,6 +9,65 @@ $ig = get_field('instagram', 'options');
 <section class='section '>
     <!-- START uk-container -->
     <div class='uk-container'>
+        <div class="uk-grid uk-grid-small uk-grid-match uk-grid-stack" uk-grid="uk-margin">
+            <!-- START uk-width-1-4@m -->
+            <div class="uk-width-1-4@m uk-first-column">
+                <!-- START card_type-icon -->
+                <div id="contactBlock" class="card_type-icon uk-text-center">
+                    <!-- START iconcontainer -->
+                    <div class="iconcontainer">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope-open-text fa-w-16">
+                            <path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z" class=""></path>
+                        </svg>
+                    </div><!-- END iconcontainer -->
+                    <h4 class="uk-margin-remove">Contact Us</h4>
+
+                </div><!-- END card_type-icon -->
+            </div><!-- END uk-width-1-4@m -->
+            <!-- START uk-width-1-4@m -->
+            <div class="uk-width-1-4@m uk-first-column">
+                <!-- START card_type-icon -->
+                <div id="careersBlock" class="card_type-icon uk-text-center">
+                    <!-- START iconcontainer -->
+                    <div class="iconcontainer">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-users fa-w-20">
+                            <path fill="currentColor" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z" class=""></path>
+                        </svg>
+                    </div><!-- END iconcontainer -->
+                    <h4 class="uk-margin-remove">Careers</h4>
+
+                </div><!-- END card_type-icon -->
+            </div><!-- END uk-width-1-4@m -->
+
+            <!-- START uk-width-1-4@m -->
+            <div class="uk-width-1-4@m uk-first-column">
+                <!-- START card_type-icon -->
+                <div id="supportBlock" class="card_type-icon uk-text-center">
+                    <!-- START iconcontainer -->
+                    <div class="iconcontainer">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headset" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-headset fa-w-16">
+                            <path fill="currentColor" d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z" class=""></path>
+                        </svg>
+                    </div><!-- END iconcontainer -->
+                    <h4 class="uk-margin-remove">customer service</h4>
+
+                </div><!-- END card_type-icon -->
+            </div><!-- END uk-width-1-4@m -->
+            <!-- START uk-width-1-4@m -->
+            <div class="uk-width-1-4@m uk-first-column">
+                <!-- START card_type-icon -->
+                <div id="franchiseBlock" class="card_type-icon uk-text-center">
+                    <!-- START iconcontainer -->
+                    <div class="iconcontainer">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="store" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 616 512" class="svg-inline--fa fa-store fa-w-20">
+                            <path fill="currentColor" d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z" class=""></path>
+                        </svg>
+                    </div><!-- END iconcontainer -->
+                    <h4 class="uk-margin-remove">franchise</h4>
+
+                </div><!-- END card_type-icon -->
+            </div><!-- END uk-width-1-4@m -->
+        </div>
         <!-- START uk-grid -->
         <div class='uk-grid'>
             <!-- START uk-width-1-3@m -->
@@ -58,8 +117,24 @@ $ig = get_field('instagram', 'options');
             <!-- START uk-width-2-3@m -->
             <div class='uk-width-2-3@m'>
                 <!-- START contactform -->
-                <div class='contactform'>
+
+
+
+
+                <div id="contactForm" class='contactform'>
                     <h2>Contact Us</h2>
+                    <?php echo do_shortcode('[contact-form-7 id="181" title="Contact form 1"]'); ?>
+                </div>
+                <div id="careersForm" class='contactform' style="display: none;">
+                    <h2>careersForm</h2>
+                    <?php echo do_shortcode('[contact-form-7 id="181" title="Contact form 1"]'); ?>
+                </div>
+                <div id="supportForm" class='contactform' style="display: none;">
+                    <h2>supportForm</h2>
+                    <?php echo do_shortcode('[contact-form-7 id="181" title="Contact form 1"]'); ?>
+                </div>
+                <div id="franchiseForm" class='contactform' style="display: none;">
+                    <h2>franchiseForm</h2>
                     <?php echo do_shortcode('[contact-form-7 id="181" title="Contact form 1"]'); ?>
                 </div>
                 <!-- END contactform -->

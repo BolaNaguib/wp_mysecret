@@ -607,4 +607,35 @@ $music = get_field('music', 'options');
             $('.loadercontainerx').addClass('loaded');
         }, 1000);
 
+    });</script><script>const contactBlock = document.getElementById('contactBlock');
+    const careersBlock = document.getElementById('careersBlock');
+    const supportBlock = document.getElementById('supportBlock');
+    const franchiseBlock = document.getElementById('franchiseBlock');
+    const contactForm = document.getElementById('contactForm');
+    const careersForm = document.getElementById('careersForm');
+    const supportForm = document.getElementById('supportForm');
+    const franchiseForm = document.getElementById('franchiseForm');
+    contactBlock.addEventListener('click', function() {
+        contactForm.style.display = "block";
+        careersForm.style.display = "none";
+        supportForm.style.display = "none";
+        franchiseForm.style.display = "none";
+    });
+    careersBlock.addEventListener('click', function() {
+        contactForm.style.display = "none";
+        careersForm.style.display = "block";
+        supportForm.style.display = "none";
+        franchiseForm.style.display = "none";
+    });
+    supportBlock.addEventListener('click', function() {
+        contactForm.style.display = "none";
+        careersForm.style.display = "none";
+        supportForm.style.display = "block";
+        franchiseForm.style.display = "none";
+    });
+    franchiseBlock.addEventListener('click', function() {
+        contactForm.style.display = "none";
+        careersForm.style.display = "none";
+        supportForm.style.display = "none";
+        franchiseForm.style.display = "block";
     });</script>
