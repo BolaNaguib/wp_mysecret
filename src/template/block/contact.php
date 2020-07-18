@@ -6,7 +6,7 @@ $pi = get_field('pinterest', 'options');
 $ig = get_field('instagram', 'options');
 ?>
 <!-- START section -->
-<section class=''>
+<section class=' '>
     <!-- START uk-container -->
     <div class='uk-container'>
         <div class="uk-grid uk-grid-small uk-grid-match uk-grid-stack" uk-grid="uk-margin">
