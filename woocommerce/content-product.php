@@ -22,6 +22,8 @@ global $product;
 // Get Product ID
 
 $ID = $product->get_id();
+$image = wp_get_attachment_image_src(get_post_thumbnail_id($ID), 'single-post-thumbnail');
+
 // Ensure visibility.
 if (empty($product) || !$product->is_visible()) {
 	return;
@@ -40,7 +42,6 @@ if (empty($product) || !$product->is_visible()) {
 
 	?>
 
-	<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($ID), 'single-post-thumbnail'); ?>
 	<!-- START card_type-product -->
 	<div class='card_type-product uk-text-center'>
 		<?php $size = array_values(wc_get_product_terms($ID, 'pa_color', array('fields' => 'ids')));
@@ -63,7 +64,9 @@ if (empty($product) || !$product->is_visible()) {
 		<div class='uk-position-relative'>
 			<!-- START imageContainer -->
 			<div class='imageContainer'>
-				<img src="<?php echo $image[0]; ?>" alt="">
+				<a href="<?php echo get_permalink($ID) ?>">
+					<img src="<?php echo $image[0]; ?>" alt="">
+				</a>
 				<!-- START imageOverlay -->
 				<div class='imageOverlay'>
 					<!-- START uk-grid uk-grid-match uk-grid-collapse -->
@@ -81,7 +84,7 @@ if (empty($product) || !$product->is_visible()) {
 						<div class='uk-width-1-2'>
 							<!-- START detailes -->
 							<div class='detailes'>
-								<a href="<?php echo get_permalink($loop[0]->post->ID) ?>"> detailes </a>
+								<a href="<?php echo get_permalink($ID) ?>"> detailes </a>
 
 							</div>
 							<!-- END Wishlist -->
