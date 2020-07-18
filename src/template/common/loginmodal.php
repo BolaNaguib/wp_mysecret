@@ -13,8 +13,8 @@
     input#user_login,
     input#user_pass {
         border: 2px solid #eeee;
-        background-color: #efe6e838;
-        border-bottom: 2px solid #fe7799;
+        background-color: #efe6e838 !important;
+        border-bottom: 2px solid #fe7799 !important;
         padding: 10px;
         width: 100%;
         display: block;
