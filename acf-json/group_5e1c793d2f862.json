@@ -132,44 +132,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_5ec663baba5b8",
-            "label": "Twitter",
-            "name": "twitter",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5ec663bfba5b9",
-            "label": "Pinterest",
-            "name": "pinterest",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_5ec663c7ba5ba",
             "label": "instagram",
             "name": "instagram",
@@ -241,5 +203,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1592911667
+    "modified": 1595778979
 }

@@ -1,8 +1,7 @@
 <!DOCTYPE html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><html><head> <?php
     // ACF FIELDS 
     $fb = get_field('facebook', 'options');
-    $tw = get_field('twitter', 'options');
-    $pi = get_field('pinterest', 'options');
+
     $ig = get_field('instagram', 'options');
     $address = get_field('address', 'options');
     $phone = get_field('phone', 'options');
