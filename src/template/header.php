@@ -97,8 +97,8 @@
     <!-- START loadercontainerx -->
     <div class='loadercontainerx'>
         <!-- START loader -->
-        <div class='loader  uk-flex-middle uk-flex uk-flex-center'>
-            <img src="<?php echo get_template_directory_uri() ?>/images/loader.gif" alt="">
+        <div class=''>
+            <img style="width:100%; height:100%" src="<?php echo get_template_directory_uri() ?>/images/loader.gif" alt="">
         </div>
 
         <!-- END loader -->
