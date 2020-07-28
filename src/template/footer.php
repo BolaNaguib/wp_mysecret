@@ -98,7 +98,7 @@ $music = get_field('music', 'options');
                 <!-- START card_type-footer-ig -->
                 <div class='card_type-footer-ig'>
                     <?php
-                    // echo do_shortcode('[instagram-feed]'); 
+                    echo do_shortcode('[instagram-feed]'); 
                     ?>
                 </div>
                 <!-- END card_type-footer-ig -->
