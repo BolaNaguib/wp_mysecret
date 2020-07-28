@@ -67,7 +67,7 @@
                                <?php global $current_user;
                                 wp_get_current_user(); ?>
                                <?php if (is_user_logged_in()) :  ?>
-                                   <a class="nav__link " href="./my-account"><?php echo $current_user->display_name;  ?></a>
+                                   <a class=" " href="./my-account"><?php echo $current_user->display_name;  ?></a>
                                <?php else : ?>
                                    <a class=" " href="#loginmodal" uk-toggle>
 
