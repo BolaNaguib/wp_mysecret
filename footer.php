@@ -600,6 +600,10 @@ $music = get_field('music', 'options');
     .imageContainer:hover .imageHover {
         transition: 300ms;
         opacity: 1;
+    }
+
+    .wishlist_products_counter_number {
+        color: #fff !important;
     }</style><script>$(document).ready(function() {
 
         setTimeout(function() {
@@ -615,27 +619,29 @@ $music = get_field('music', 'options');
     const careersForm = document.getElementById('careersForm');
     const supportForm = document.getElementById('supportForm');
     const franchiseForm = document.getElementById('franchiseForm');
-    contactBlock.addEventListener('click', function() {
-        contactForm.style.display = "block";
-        careersForm.style.display = "none";
-        supportForm.style.display = "none";
-        franchiseForm.style.display = "none";
-    });
-    careersBlock.addEventListener('click', function() {
-        contactForm.style.display = "none";
-        careersForm.style.display = "block";
-        supportForm.style.display = "none";
-        franchiseForm.style.display = "none";
-    });
-    supportBlock.addEventListener('click', function() {
-        contactForm.style.display = "none";
-        careersForm.style.display = "none";
-        supportForm.style.display = "block";
-        franchiseForm.style.display = "none";
-    });
-    franchiseBlock.addEventListener('click', function() {
-        contactForm.style.display = "none";
-        careersForm.style.display = "none";
-        supportForm.style.display = "none";
-        franchiseForm.style.display = "block";
-    });</script>
+    if (contactBlock) {
+        contactBlock.addEventListener('click', function() {
+            contactForm.style.display = "block";
+            careersForm.style.display = "none";
+            supportForm.style.display = "none";
+            franchiseForm.style.display = "none";
+        });
+        careersBlock.addEventListener('click', function() {
+            contactForm.style.display = "none";
+            careersForm.style.display = "block";
+            supportForm.style.display = "none";
+            franchiseForm.style.display = "none";
+        });
+        supportBlock.addEventListener('click', function() {
+            contactForm.style.display = "none";
+            careersForm.style.display = "none";
+            supportForm.style.display = "block";
+            franchiseForm.style.display = "none";
+        });
+        franchiseBlock.addEventListener('click', function() {
+            contactForm.style.display = "none";
+            careersForm.style.display = "none";
+            supportForm.style.display = "none";
+            franchiseForm.style.display = "block";
+        });
+    }</script>

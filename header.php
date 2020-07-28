@@ -67,4 +67,6 @@
         .loaded {
             display: none;
             transition: 300ms;
-        }</style><!-- START loadercontainerx --><div class="loadercontainerx"><!-- START loader --><div class=""><img style="width:100%; height:100vh" src="<?php echo get_template_directory_uri() ?>/images/loader.gif" alt=""></div><!-- END loader --></div><!-- END loadercontainerx --> <?php include get_template_directory() . '/common/topmenu.php'; ?> <?php include get_template_directory() . '/common/mainmenudesktop.php'; ?> <?php include get_template_directory() . '/common/mobilemenu.php'; ?> <?php include get_template_directory() . '/common/loginmodal.php'; ?> <!-- </div> --></body></html>
+        }</style><!-- START loadercontainerx --><div class="loadercontainerx"><!-- START loader --><div class=""><img style="width:100%; height:100vh" src="<?php echo get_template_directory_uri() ?>/images/loader.gif" alt=""></div><!-- END loader --></div><!-- END loadercontainerx --> <?php include get_template_directory() . '/common/topmenu.php'; ?> <?php include get_template_directory() . '/common/mainmenudesktop.php'; ?> <?php include get_template_directory() . '/common/mobilemenu.php'; ?> <?php include get_template_directory() . '/common/loginmodal.php'; ?> <?php global $wpdb;
+
+    ?> <!-- </div> --></body></html>

@@ -59,7 +59,7 @@
                <!-- START uk-width-1-3@m -->
                <div class='uk-width-1-3@m uk-width-1-1 uk-flex uk-flex-right@m uk-flex-center'>
                    <!-- START uk-grid uk-child-width-auto -->
-                   <div class='uk-grid uk-child-width-auto'>
+                   <div class='uk-grid uk-grid-small uk-child-width-auto'>
                        <!-- START div -->
                        <div class='div'>
                            <!-- START logincontainer -->
@@ -83,6 +83,15 @@
                        <!-- END div -->
                        <!-- START div -->
                        <div class='div'>
+                           <a href="<?php home_url() ?>/wishlist">
+                               <img src="<?php echo get_template_directory_uri() ?>/images/wish.png" alt="">
+                               <span style=" padding: 1px 5px; color:#fff;" class="badgex"> <?php echo do_shortcode('[ti_wishlist_products_counter]') ?></span>
+                           </a>
+
+                       </div>
+                       <!-- END div -->
+                       <!-- START div -->
+                       <div class='div'>
                            <!-- START cardiconcontainer -->
                            <div class='cardiconcontainer'>
                                <?php global $woocommerce; ?>
@@ -96,6 +105,7 @@
                            <!-- END cardiconcontainer -->
                        </div>
                        <!-- END div -->
+
                    </div>
                    <!-- END uk-grid uk-child-width-auto -->
 

@@ -110,4 +110,9 @@
     <?php include get_template_directory() . '/common/loginmodal.php'; ?>
 
 
+    
+    <?php global $wpdb;
+
+    ?>
+
     <!-- </div> -->
