@@ -64,9 +64,16 @@
                        <div class='div'>
                            <!-- START logincontainer -->
                            <div class='logincontainer topnavmenu'>
-                               <a class=" " href="#loginmodal" uk-toggle>
+                               <?php global $current_user;
+                                wp_get_current_user(); ?>
+                               <?php if (is_user_logged_in()) :  ?>
+                                   <a class="nav__link " href="./my-account"><?php echo $current_user->display_name;  ?></a>
+                               <?php else : ?>
+                                   <a class=" " href="#loginmodal" uk-toggle>
 
-                                   Login </a>
+                                       Login </a>
+                               <?php endif; ?>
+
                            </div>
                            <!-- END logincontainer -->
                        </div>
