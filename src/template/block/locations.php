@@ -1,7 +1,7 @@
 <?php
 //  ACF FIELDS 
 $location_block_title = get_field('location_block_title');
-$working_hours_title = get_sub_field('working_hours_title');
+$working_hours_title = get_field('working_hours_title');
 ?>
 <!-- START section -->
 <section class=' '>
