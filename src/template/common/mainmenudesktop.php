@@ -30,7 +30,7 @@
 
                                         <?php if (have_rows('sub_menu', 'options')) : ?>
 
-                                            <div class="dropdown-controller" style="display:none;" uk-dropdown="pos: bottom-left; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
+                                            <div class="dropdown-controller" style="display:none;   top: 10px !important;" uk-dropdown="pos: bottom-left; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
 
                                                 <!-- START card_type-submenulink -->
                                                 <div class='card_type-submenulink'>

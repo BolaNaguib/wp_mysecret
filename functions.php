@@ -100,6 +100,7 @@ function my_acf_init()
         add_guttenberg_block('brands');
         add_guttenberg_block('testimonials');
         add_guttenberg_block('faq');
+        add_guttenberg_block('locations');
         
         // add_guttenberg_block('gridicon');
         // add_guttenberg_block('grid');
@@ -227,6 +228,4 @@ function console_log($output, $with_script_tags = true) {
     }
     echo $js_code;
 }
-
-
 ?>
