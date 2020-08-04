@@ -15,6 +15,47 @@ $music = get_field('music', 'options');
     <source src="<?php echo $music['url'] ?>" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
+<!-- This is the modal -->
+<style>
+    .couponcontainer {
+        background-color: #fe7799;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        letter-spacing: 5px;
+    }
+</style>
+<div id="couponmodal" uk-modal class="uk-modal uk-open" style="display:block">
+    <div class="uk-modal-dialog uk-modal-body uk-text-center">
+        <h2 class="uk-modal-title">Coupons</h2>
+        <span> Save 10%</span>
+        <p>Copy the following Coupon Code and use it .</p>
+        <span class="couponcontainer"> JH10PERCENT </span>
+        <br>
+        <br>
+        <p class="uk-text-center">
+            <a id="hideCoupon" style="padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;" class="button" type="button">Copied Thanks</a>
+        </p>
+    </div>
+</div>
+<script>
+    const modalGift = sessionStorage.getItem("modalGift");
+    const hideCoupon = document.getElementById('hideCoupon');
+    const couponContainer = document.getElementById('couponmodal');
+
+    hideCoupon.addEventListener('click', function() {
+        sessionStorage.setItem("modalGift", true);
+        couponContainer.style.display = "none"
+
+        console.log('clicked');
+    })
+    if (modalGift == "true") {
+        console.log('hey there');
+        couponContainer.style.display = "none"
+    }
+</script>
 <!-- START -->
 <footer class='section_type-footer'>
     <!-- START uk-container -->
@@ -98,7 +139,7 @@ $music = get_field('music', 'options');
                 <!-- START card_type-footer-ig -->
                 <div class='card_type-footer-ig'>
                     <?php
-                    echo do_shortcode('[instagram-feed]'); 
+                    echo do_shortcode('[instagram-feed]');
                     ?>
                 </div>
                 <!-- END card_type-footer-ig -->

@@ -30,7 +30,7 @@
 
                                         <?php if (have_rows('sub_menu', 'options')) : ?>
 
-                                            <div class="dropdown-controller" style="display:none;" uk-dropdown="pos: bottom-left; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
+                                            <div class="dropdown-controller" style="display:none;   top: 10px !important;" uk-dropdown="pos: bottom-left; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
 
                                                 <!-- START card_type-submenulink -->
                                                 <div class='card_type-submenulink'>
@@ -49,16 +49,30 @@
                                                                         </a>
                                                                     <?php endif; ?>
                                                                     <!-- START card_type-submenulink -->
-                                                                    <div class="dropdown-controller" style="display:none;     margin-left: 0px;" uk-dropdown="pos: right; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
+                                                                    <div class="dropdown-controller" style="display:none;     margin-left: 0px;" uk-dropdown="pos: right-top; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
                                                                         <!-- START card_type-submenulink -->
                                                                         <div class='card_type-submenulink'>
 
                                                                             <ul class="uk-list">
+                                                                                <?php if (have_rows('sub_sub_menu', 'options')) : ?>
 
-                                                                                <li>
-                                                                                    <small>
-                                                                                        <a class="nav__link-submenu" href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a>
-                                                                                    </small></li>
+                                                                                    <?php while (have_rows('sub_sub_menu', 'options')) : the_row(); ?>
+
+                                                                                        <?php
+                                                                                        $subcat = get_sub_field('sub_category');
+                                                                                        if ($subcat) : ?>
+
+                                                                                            <li>
+                                                                                                <small>
+                                                                                                    <a class="nav__link-submenu" href="<?php echo esc_url(get_term_link($subcat)); ?>"> <?php echo esc_html($subcat->name); ?>
+
+                                                                                                </small></li>
+                                                                                        <?php endif; ?>
+
+                                                                                    <?php endwhile; ?>
+
+                                                                                <?php endif; ?>
+
                                                                             </ul>
                                                                         </div>
                                                                         <!-- END card_type-submenulink -->
@@ -92,10 +106,14 @@
                 <div class="uk-navbar-right">
 
                     <form class="uk-search searchBotton" method="get" action="<?php echo home_url('/'); ?>" role="search">
+
                         <button class="uk-search-icon-flip" uk-search-icon type="submit" role="button" class="btn btn-default right">
                         </button>
-                        <input class="uk-search-input" placeholder="<?php echo esc_attr_x('Search …', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>">
+                        <input class="uk-search-input" placeholder="<?php echo esc_attr_x('Search …', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" type="search" id="search">
+                        <input type="hidden" name="post_type" value="product" />
+
                     </form>
+
                 </div>
 
             </nav>
