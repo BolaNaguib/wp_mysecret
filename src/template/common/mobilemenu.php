@@ -42,6 +42,11 @@
 
                                                     <?php if (have_rows('sub_menu', 'options')) : ?>
                                                         <ul class="uk-nav-sub">
+                                                            <li>
+                                                                <a class="nav__link_type-mobile" href="<?php the_permalink($postz); ?>">
+                                                                    <?php echo $main_menu_title  ?>
+                                                                </a>
+                                                            </li>
                                                             <?php while (have_rows('sub_menu', 'options')) : the_row();
                                                                 //ACF Fields
                                                                 $block_title = get_sub_field('block_title');
