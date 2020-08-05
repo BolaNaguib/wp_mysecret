@@ -162,7 +162,7 @@ $music = get_field('music', 'options');
         <!-- START uk-text-center -->
         <div class='uk-text-center'>
             <small>
-                © 2020 MySecret | Developed by Inetwork-me.com
+                © 2020 MySecret | Developed by <a style="color: #fff;" href="https://inetwork-me.com/"> Inetwork-me.com </a>
             </small>
 
         </div>
