@@ -6,8 +6,8 @@
 
             <div class="uk-navbar-left">
                 <a href="/">
-                <a class="nav__link" href="<?php the_permalink($post); ?>">
-                            My Secret</a>
+                    <a class="nav__link" href="<?php the_permalink($post); ?>">
+                        My Secret</a>
                     <!-- <img loading="lazy" style="max-height:50px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>"> -->
                 </a>
 
@@ -53,7 +53,28 @@
                                                                 <?php endif; ?>
 
                                                                 <li>
-                                                                    <a class="nav__link-mobile-sub" href="<?php echo esc_url(get_term_link($term)); ?>"> <?php echo esc_html($term->name); ?> </a>
+                                                                    <a class="nav__link-mobile-sub" href="<?php echo esc_url(get_term_link($term)); ?>"> <?php echo esc_html($term->name); ?>
+
+                                                                        <?php if (have_rows('sub_sub_menu', 'options')) : ?>
+                                                                            <ul class="uk-nav-sub">
+
+                                                                                <?php while (have_rows('sub_sub_menu', 'options')) : the_row(); ?>
+
+                                                                                    <?php
+                                                                                    $subcat = get_sub_field('sub_category');
+                                                                                    if ($subcat) : ?>
+
+                                                                                        <li>
+                                                                                            <small>
+                                                                                                <a class="nav__link-submenu" href="<?php echo esc_url(get_term_link($subcat)); ?>"> <?php echo esc_html($subcat->name); ?>
+
+                                                                                            </small></li>
+                                                                                    <?php endif; ?>
+
+                                                                                <?php endwhile; ?>
+                                                                            </ul>
+                                                                        <?php endif; ?>
+                                                                    </a>
 
                                                                 </li>
 
