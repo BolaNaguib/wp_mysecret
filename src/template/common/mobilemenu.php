@@ -5,11 +5,9 @@
         <nav uk-navbar style="    padding: 20px 0px;">
 
             <div class="uk-navbar-left">
-                <a href="/">
-                    <a class="nav__link" href="<?php the_permalink($post); ?>">
-                        My Secret</a>
-                    <!-- <img loading="lazy" style="max-height:50px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>"> -->
-                </a>
+                <a class="nav__link" href="/">
+                    My Secret</a>
+                <!-- <img loading="lazy" style="max-height:50px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>"> -->
 
             </div>
 

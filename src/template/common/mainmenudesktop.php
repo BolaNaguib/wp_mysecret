@@ -6,12 +6,10 @@
         <div class='mainmenua_navbar  '>
             <nav uk-navbar>
                 <div class="uk-navbar-left">
-                    <a href="/">
 
-                        <a class="nav__link" href="<?php the_permalink($post); ?>">
-                            My Secret</a>
-                        <!-- <img loading="lazy" style="max-height:110px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>"> -->
-                    </a>
+                    <a class="nav__link" href="/">
+                        My Secret</a>
+                    <!-- <img loading="lazy" style="max-height:110px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>"> -->
                 </div>
                 <div class="uk-navbar-center">
 
@@ -101,7 +99,7 @@
 
                     </ul>
 
- 
+
                 </div>
                 <div class="uk-navbar-right">
 
