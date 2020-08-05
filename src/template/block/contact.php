@@ -87,7 +87,7 @@ $form_four = get_field('form_four');
             <div class='uk-width-1-3@m'>
                 <!-- START contact-info -->
                 <div class='contact-info'>
-                    <h2>Stay in Touch</h2>
+                    <h3>Stay in Touch</h3>
                     <!-- START contactInfoContainer -->
                     <div class='contactInfoContainer'>
                         <span class="title"> Address:</span>
@@ -135,20 +135,20 @@ $form_four = get_field('form_four');
 
 
                 <div id="contactForm" class='contactform'>
-                    <h2><?php echo $form_title_one ?></h2>
+                    <h3><?php echo $form_title_one ?></h3>
                     <?php echo do_shortcode(' ' . $form_one . ' '); ?>
                 </div>
                 <div id="careersForm" class='contactform' style="display: none;">
-                    <h2>careersForm</h2>
-                    <?php echo do_shortcode('[contact-form-7 id="181" title="Contact form 1"]'); ?>
+                    <h3><?php echo $form_title_two ?></h3>
+                    <?php echo do_shortcode(' ' . $form_two . ' '); ?>
                 </div>
                 <div id="supportForm" class='contactform' style="display: none;">
-                    <h2>supportForm</h2>
-                    <?php echo do_shortcode('[contact-form-7 id="181" title="Contact form 1"]'); ?>
+                    <h3><?php echo $form_title_three ?></h3>
+                    <?php echo do_shortcode(' ' . $form_three . ' '); ?>
                 </div>
                 <div id="franchiseForm" class='contactform' style="display: none;">
-                    <h2>franchiseForm</h2>
-                    <?php echo do_shortcode('[contact-form-7 id="181" title="Contact form 1"]'); ?>
+                    <h3><?php echo $form_title_four ?></h3>
+                    <?php echo do_shortcode(' ' . $form_four . ' '); ?>
                 </div>
                 <!-- END contactform -->
             </div>
