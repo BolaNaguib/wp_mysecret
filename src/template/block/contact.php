@@ -89,7 +89,7 @@ $general_title = get_field('general_title');
             <div class='uk-width-1-3@m'>
                 <!-- START contact-info -->
                 <div class='contact-info'>
-                    <h3> <?php echo $general_title ?> </h3>
+                    <h2> <?php echo $general_title ?> </h2>
                     <?php if (have_rows('locations')) : ?>
                         <?php while (have_rows('locations')) : the_row();
                             //ACF Fields
