@@ -1,3 +1,11 @@
+<?php 
+$first_title = get_field('first_title');
+$second_title = get_field('second_title');
+$caption = get_field('caption');
+$terms = get_field('categories');
+
+
+?>
  <!-- START section -->
  <section class='section'>
      <!-- START uk-container -->
@@ -18,16 +26,15 @@
              <!-- END uk-width-1-4@m -->
              <!-- START uk-width-3-4 -->
              <div class='uk-width-3-4'>
+            <?php if( $terms ): ?>
+
                  <ul class="uk-grid uk-child-width-1-3@m categorieslist">
-                     <li> <a href=""> BABYDOLLS & SLIPS </a> </li>
-                     <li><a href=""> NEW ARRIVALS </a></li>
-                     <li> <a href=""> CHEEKIES & CHEEKINIS </a> </li>
-                     <li> <a href=""> TEDDIES & BODYSUITS </a> </li>
-                     <li><a href=""> SEXY LITTLE THINGS </a></li>
-                     <li> <a href=""> THONGS & V-STRINGS </a> </li>
-                     <li> <a href=""> CORSETS & BUSTIERS </a> </li>
-                     <li><a href=""> SHAPES OF THE SEASON </a></li>
-                     <li> <a href=""> SHORTIES & BOYSHORTS </a> </li>
+                 <?php foreach( $terms as $term ): ?>
+
+        <li> <a href="<?php echo esc_url( get_term_link( $term ) ); ?>"> <?php echo esc_html( $term->name ); ?> </a> </li>
+
+    <?php endforeach; endif; ?>
+    
                  </ul>
              </div>
              <!-- END uk-width-3-4 -->
