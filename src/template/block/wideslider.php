@@ -1,6 +1,6 @@
 <!-- WIDESLIDER -->
 <!-- START section_type-slider -->
-<div class='section_type-wideslider'>
+<div class='' style='margin-bottom: 10px;'>
     <!-- START uk-container -->
     <div class='uk-container'>
         <div uk-slideshow="animation: fade">

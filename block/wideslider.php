@@ -1,4 +1,4 @@
-<!-- WIDESLIDER --><!-- START section_type-slider --><div class="section_type-wideslider"><!-- START uk-container --><div class="uk-container"><div uk-slideshow="animation: fade"><div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"> <?php if (have_rows('slider')) : ?> <ul class="uk-slideshow-items"> <?php while (have_rows('slider')) : the_row();
+<!-- WIDESLIDER --><!-- START section_type-slider --><div class="" style="margin-bottom: 10px;"><!-- START uk-container --><div class="uk-container"><div uk-slideshow="animation: fade"><div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"> <?php if (have_rows('slider')) : ?> <ul class="uk-slideshow-items"> <?php while (have_rows('slider')) : the_row();
                             //ACF Fields
                             $image = get_sub_field('image');
                             $page = get_sub_field('page');

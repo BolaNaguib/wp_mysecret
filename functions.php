@@ -109,6 +109,7 @@ function my_acf_init()
         add_guttenberg_block('testimonials');
         add_guttenberg_block('faq');
         add_guttenberg_block('locations');
+        add_guttenberg_block('categoryblock');
         
         // add_guttenberg_block('gridicon');
         // add_guttenberg_block('grid');
