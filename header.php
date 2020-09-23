@@ -59,11 +59,13 @@
             height: 100%;
             position: absolute;
             top: 0px;
-            background-color: #ffffff;
+            background-color: #000;
+            color: #fff;
             z-index: 9999999;
             display: block;
             transition: 300ms;
 
+opacity:1;
         }
 
         .loader {
@@ -78,8 +80,54 @@
         }
 
         .loaded {
-            display: none;
+            /* display: none; */
+            opacity: 0;
             transition: 300ms;
-        }</style><!-- START loadercontainerx --><div class="loadercontainerx"><!-- START loader --><div class=""><img style="width:100%; height:100vh" src="<?php echo get_template_directory_uri() ?>/images/loader.gif" alt=""></div><!-- END loader --></div><!-- END loadercontainerx --> <?php include get_template_directory() . '/common/topmenu.php'; ?> <?php include get_template_directory() . '/common/mainmenudesktop.php'; ?> <?php include get_template_directory() . '/common/mobilemenu.php'; ?> <?php include get_template_directory() . '/common/loginmodal.php'; ?> <?php global $wpdb;
+            z-index: -1;
+        }
+        .spinner {
+  
+  text-align: center;
+  display: inline-block;
+}
+
+.spinner > div {
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}</style><!-- START loadercontainerx --><div class="loadercontainerx uk-text-center"><!-- START loader --><div class="" style="height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;"><span style="margin-right:4px;">My Secret</span><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div><!-- END loader --></div><!-- END loadercontainerx --> <?php include get_template_directory() . '/common/topmenu.php'; ?> <?php include get_template_directory() . '/common/mainmenudesktop.php'; ?> <?php include get_template_directory() . '/common/mobilemenu.php'; ?> <?php include get_template_directory() . '/common/loginmodal.php'; ?> <?php global $wpdb;
 
     ?> <!-- </div> --></body></html>
