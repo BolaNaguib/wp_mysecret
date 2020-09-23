@@ -97,9 +97,9 @@ endif;
                             <!-- START uk-text-center -->
                             <div class='uk-text-center uk-margin-top'>
                                 <span class="title"><?php echo the_title(); ?></span>
-                                <?php if ($price_html = $product->get_price_html()) : ?>
+                                <!-- <?php if ($price_html = $product->get_price_html()) : ?>
                                     <span class="price"><?php echo $price_html; ?></span>
-                                <?php endif; ?>
+                                <?php endif; ?> -->
                             </div>
                             <!-- END uk-text-center -->
 
