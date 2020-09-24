@@ -13,7 +13,7 @@ endif;
 <!-- START section-testimonials -->
 <section class='section-testimonials full-width'>
     <!-- START uk-container -->
-    <div class='uk-container'>
+    <div class='u'>
         <!-- START uk-text-center -->
         <div class='uk-text-center'>
             <!-- START section-header -->

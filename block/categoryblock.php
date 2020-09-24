@@ -1,7 +1,7 @@
 <?php //ACF FIELDS 
 $section_title = get_field('section_title');
 $section_caption = get_field('section_caption');
-?> <!-- categoriesBlock --><!-- START section --><section class=""><!-- START uk-container --><div class="uk-container"><!-- END uk-text-center --> <?php if (have_rows('categories')) : ?> <!-- START uk-grid --><div class="uk-grid uk-grid-small" uk-grid="uk-margin" uk-scrollspy="cls: uk-animation-slide-bottom; target: .categorycardanimation; delay: 500; "> <?php while (have_rows('categories')) : the_row(); ?> <?php // ACF FIELDS 
+?> <!-- categoriesBlock --><!-- START section --><section class=""><!-- START uk-container --><div class=""><!-- END uk-text-center --> <?php if (have_rows('categories')) : ?> <!-- START uk-grid --><div class="uk-grid uk-grid-small" uk-grid="uk-margin" uk-scrollspy="cls: uk-animation-slide-bottom; target: .categorycardanimation; delay: 500; "> <?php while (have_rows('categories')) : the_row(); ?> <?php // ACF FIELDS 
                     $term = get_sub_field('productcategory');
                     $image = get_sub_field('image');
                     $wide = get_sub_field('wide');

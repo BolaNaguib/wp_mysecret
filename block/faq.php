@@ -1,4 +1,4 @@
-<?php if (have_rows('faq')) : ?> <!-- START section --><div class="section"><!-- START uk-container --><div class="uk-container"><ul uk-accordion> <?php while (have_rows('faq')) : the_row();
+<?php if (have_rows('faq')) : ?> <!-- START section --><div class="section"><!-- START uk-container --><div class=""><ul uk-accordion> <?php while (have_rows('faq')) : the_row();
                     //ACF Fields
                     $faq_title = get_sub_field('faq_title');
                     $faq_content = get_sub_field('faq_content');

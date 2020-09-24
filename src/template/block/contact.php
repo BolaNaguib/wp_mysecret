@@ -23,7 +23,7 @@ $general_title = get_field('general_title');
 <!-- START section -->
 <section class=' '>
     <!-- START uk-container -->
-    <div class='uk-container'>
+    <div class=''>
         <div class="uk-grid uk-grid-small uk-grid-match uk-grid-stack" uk-grid="uk-margin">
             <!-- START uk-width-1-4@m -->
             <div class="uk-width-1-4@m uk-first-column">

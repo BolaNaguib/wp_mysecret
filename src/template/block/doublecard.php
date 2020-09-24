@@ -11,7 +11,7 @@ $right_page = get_field('right_page');
 <!-- START section-doublecard -->
 <div class='section-doublecard'>
     <!-- START uk-container -->
-    <div class='uk-container'>
+    <div class=''>
         <!-- START uk-grid uk-grid-match -->
         <div class='uk-grid uk-grid-match uk-grid-small'>
             <!-- START uk-width-2-3@m uk-width-1-1 -->

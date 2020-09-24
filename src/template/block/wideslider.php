@@ -2,7 +2,7 @@
 <!-- START section_type-slider -->
 <div class='' style='margin-bottom: 10px;'>
     <!-- START uk-container -->
-    <div class='uk-container'>
+    <div class=''>
         <div uk-slideshow="animation: fade">
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
                 <?php if (have_rows('slider')) : ?>

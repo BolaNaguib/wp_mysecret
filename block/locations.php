@@ -2,7 +2,7 @@
 //  ACF FIELDS 
 $location_block_title = get_field('location_block_title');
 $working_hours_title = get_field('working_hours_title');
-?> <!-- START section --><section class=""><!-- START uk-container --><div class="uk-container"><div class="uk-grid"><!-- START uk-width-1-3@m --><div class="uk-width-1-3@m"><!-- START contact-info --><div class="contact-info"><h3> <?php echo $location_block_title ?> </h3> <?php if (have_rows('locations')) : ?> <?php while (have_rows('locations')) : the_row();
+?> <!-- START section --><section class=""><!-- START uk-container --><div class=""><div class="uk-grid"><!-- START uk-width-1-3@m --><div class="uk-width-1-3@m"><!-- START contact-info --><div class="contact-info"><h3> <?php echo $location_block_title ?> </h3> <?php if (have_rows('locations')) : ?> <?php while (have_rows('locations')) : the_row();
                             //ACF Fields
                             $area = get_sub_field('area');
                             $address = get_sub_field('address');

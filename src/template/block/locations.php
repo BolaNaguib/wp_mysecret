@@ -6,7 +6,7 @@ $working_hours_title = get_field('working_hours_title');
 <!-- START section -->
 <section class=' '>
     <!-- START uk-container -->
-    <div class='uk-container'>
+    <div class=''>
 
         <div class='uk-grid'>
             <!-- START uk-width-1-3@m -->

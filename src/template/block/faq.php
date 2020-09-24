@@ -2,7 +2,7 @@
     <!-- START section -->
     <div class='section'>
         <!-- START uk-container -->
-        <div class='uk-container'>
+        <div class=''>
             <ul uk-accordion>
                 <?php while (have_rows('faq')) : the_row();
                     //ACF Fields

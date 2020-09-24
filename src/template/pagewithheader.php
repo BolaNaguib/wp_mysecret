@@ -23,10 +23,10 @@ $hero_caption = get_field('hero_caption');
 
 </section>
 <!-- START section -->
-<div class='section'>
+<div class='' style='padding-top:10px'>
 
     <!-- START uk-container -->
-    <div class='uk-container'>
+    <div class='uk-padding-small uk-padding-remove-vertical'>
         <?php if (have_posts()) : ?>
             <?php /* Start the Loop */ ?>
             <?php while (have_posts()) : the_post(); ?>

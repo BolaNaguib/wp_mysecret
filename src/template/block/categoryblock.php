@@ -6,7 +6,7 @@ $section_caption = get_field('section_caption');
 <!-- START section -->
 <section class=''>
     <!-- START uk-container -->
-    <div class='uk-container'>
+    <div class=''>
       
         <!-- END uk-text-center -->
         <?php if (have_rows('categories')) : ?>

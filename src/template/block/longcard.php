@@ -13,13 +13,13 @@ $button_link = get_field('button_link');
 <!-- START section-longcard -->
 <div class='section-longcard'>
     <!-- START uk-container -->
-    <div class='uk-container'>
+    <div class=''>
         <!-- START uk-grid uk-grid-match uk-grid-collapse -->
         <div class='uk-grid uk-grid-match uk-grid-collapse' uk-grid='uk-margin'>
             <!-- START uk-width-1-2@m uk-width-1-1 -->
             <div class='uk-width-1-2@m uk-width-1-1 '>
                 <!-- START leftblock -->
-                <div class='leftblock' style="background: url('<?php echo $media['url'] ?>')">
+                <div class='leftblock' style="background: url('<?php echo $media['url'] ?>');background-size: cover;">
                     <!-- <img src="<?php echo $media['url'] ?>" alt="<?php echo $media['alt'] ?>"> -->
                 </div>
                 <!-- END leftblock -->

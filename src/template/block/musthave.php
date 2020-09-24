@@ -13,7 +13,7 @@ endif;
 <!-- START section-musthave -->
 <section class='section-musthave'>
     <!-- START uk-container -->
-    <div class='uk-container'>
+    <div class='uk-padding-small uk-padding-remove-vertical'>
         <!-- START uk-text-center -->
         <div class='uk-text-center'>
             <!-- START section-header -->

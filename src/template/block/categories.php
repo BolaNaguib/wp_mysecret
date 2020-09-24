@@ -9,7 +9,7 @@ $terms = get_field('categories');
  <!-- START section -->
  <section class='section'>
      <!-- START uk-container -->
-     <div class='uk-container'>
+     <div class='uk-padding-small uk-padding-remove-vertical'>
          <!-- START uk-grid -->
          <div class='uk-grid'>
              <!-- START uk-width-1-4@m -->
