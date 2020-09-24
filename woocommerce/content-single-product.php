@@ -51,7 +51,7 @@ $modal_image = get_field('modal_image');
 	}
 
 	.sizeTable:hover h1 {
-		color: #fe7799 !important;
+		color: #000 !important;
 		transition: 300ms;
 	}
 </style>
@@ -130,6 +130,6 @@ $modal_image = get_field('modal_image');
 
 <style>
 	.catbreadcrumbs a {
-		color: #fe7799 !important;
+		color: #000 !important;
 	}
 </style>

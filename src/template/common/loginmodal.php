@@ -139,7 +139,7 @@ do_action('woocommerce_before_customer_login_form'); ?>
     input#reg_email  {
         border: 2px solid #eeee;
         background-color: #efe6e838 !important;
-        border-bottom: 2px solid #fe7799 !important;
+        border-bottom: 2px solid #000 !important;
         padding: 10px;
         width: 100%;
         display: block;

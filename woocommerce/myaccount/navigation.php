@@ -31,7 +31,7 @@ do_action('woocommerce_before_account_navigation');
 <br>
 <style>
 	li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--orders.is-active a {
-		background-color: #fe7799;
+		background-color: #000;
 	}
 </style>
 <nav class="woocommerce-MyAccount-navigation">

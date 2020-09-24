@@ -18,7 +18,7 @@ $music = get_field('music', 'options');
 <!-- This is the modal -->
 <style>
     .couponcontainer {
-        background-color: #fe7799;
+        background-color: #000;
         color: #fff;
         padding: 10px 20px;
         border-radius: 5px;
@@ -251,7 +251,7 @@ $music = get_field('music', 'options');
     }
 
     input.wpcf7-form-control.wpcf7-submit {
-        background-color: #fe8c99;
+        background-color: #000;
         padding: 20px 30px;
         color: #fff;
         display: inline-block;
@@ -327,7 +327,7 @@ $music = get_field('music', 'options');
 
     li.variable-item.color-variable-item.selected {
         border-radius: 100% !important;
-        box-shadow: 0 0 0 1px #fe7799 !important;
+        box-shadow: 0 0 0 1px #000 !important;
     }
 
     li.variable-item.color-variable-item {
@@ -354,20 +354,20 @@ $music = get_field('music', 'options');
     }
 
     .woo-variation-swatches-stylesheet-enabled .variable-items-wrapper .variable-item:not(.radio-variable-item):hover {
-        color: #fe7799 !important;
-        border-color: #fe7799 !important;
+        color: #000 !important;
+        border-color: #000 !important;
     }
 
     li.variable-item.button-variable-item.selected {
-        color: #fe7799 !important;
-        border-color: #fe7799 !important;
+        color: #000 !important;
+        border-color: #000 !important;
     }
 
     .variable-items-wrapper .wvs-has-image-tooltip:hover:after,
     .variable-items-wrapper .wvs-has-image-tooltip:hover:before,
     .variable-items-wrapper [data-wvstooltip]:hover:after,
     .variable-items-wrapper [data-wvstooltip]:hover:before {
-        background-color: #fe7799 !important;
+        background-color: #000 !important;
     }
 
     table.variations .label,
@@ -390,7 +390,7 @@ $music = get_field('music', 'options');
     }
 
     span.woocs_price_code {
-        color: #fe7799 !important;
+        color: #000 !important;
     }
 
     span.woocommerce-Price-currencySymbol {
@@ -400,7 +400,7 @@ $music = get_field('music', 'options');
     }
 
     .woocommerce-variation-price {
-        border: 1px solid #fe7799;
+        border: 1px solid #000;
         display: inline-block;
         padding: 5px 10px;
         position: absolute;
@@ -436,7 +436,7 @@ $music = get_field('music', 'options');
 
     .woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
         color: #fff;
-        background-color: #fe7799;
+        background-color: #000;
     }
 
     .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
@@ -459,7 +459,7 @@ $music = get_field('music', 'options');
     }
 
     .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
-        background-color: fe7799;
+        background-color: 000;
 
         color: #fff !important;
     }
@@ -472,7 +472,7 @@ $music = get_field('music', 'options');
     }
 
     .cartItemName a:hover {
-        color: #fe7799 !important;
+        color: #000 !important;
         transition: 300ms;
 
     }
@@ -647,11 +647,11 @@ $music = get_field('music', 'options');
     }
 
     .span.woocommerce-Price-amount.amount {
-        color: #fe7799 !important;
+        color: #000 !important;
     }
 
     .button {
-        background-color: #fe7799 !important;
+        background-color: #000 !important;
         color: #fff !important;
         font-weight: 400 !important;
         letter-spacing: 1px;
@@ -700,7 +700,7 @@ $music = get_field('music', 'options');
 
     .woocommerce .quantity .minus,
     .woocommerce .quantity .plus {
-        background-color: #fe7799;
+        background-color: #000;
         color: #fff !important;
         border: none !important;
         cursor: pointer;
@@ -719,7 +719,7 @@ $music = get_field('music', 'options');
         /* border-left: 2px solid #eee !important;
         border-right: 2px solid #eee !important; */
         width: 44px !important;
-        border: 1px solid #fe7799;
+        border: 1px solid #000;
         height: 38px !important;
     }
 
@@ -743,11 +743,11 @@ $music = get_field('music', 'options');
     }
 
     .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
-        background-color: #fe7799;
+        background-color: #000;
     }
 
     .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
-        background-color: #fe7799;
+        background-color: #000;
         top: -6px;
     }
 
@@ -760,11 +760,11 @@ $music = get_field('music', 'options');
     }
 
     .li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term a {
-        color: #fe7799 !important;
+        color: #000 !important;
     }
 
     li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen {
-        background-color: #fe7799;
+        background-color: #000;
     }
 
     li.woocommerce-widget-layered-nav-list__item.wc-layered-nav-term.woocommerce-widget-layered-nav-list__item--chosen.chosen a {

@@ -106,7 +106,7 @@
         text-align: center;
         line-height: 16px !important;
         padding: 0.45em 1.4em !important;
-        background-color: #fe7799;
+        background-color: #000;
         display: block;
         color: #fff !important;
         margin-bottom: 5px;
@@ -114,7 +114,7 @@
     }
 
     .woocommerce-mini-cart__buttons a:hover {
-        background-color: #fe7799;
+        background-color: #000;
         transition: 300ms;
 
     }
@@ -126,7 +126,7 @@
     }
 
     .woocommerce-mini-cart__buttons .checkout:hover {
-        background-color: #fe7799;
+        background-color: #000;
         transition: 300ms;
 
 

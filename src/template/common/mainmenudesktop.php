@@ -118,7 +118,7 @@
 
                     <form class="uk-search searchBotton" method="get" action="<?php echo home_url('/'); ?>" role="search">
 
-                        <button class="uk-search-icon-flip" uk-search-icon type="submit" role="button" class="btn btn-default right">
+                        <button class="uk-search-icon-flip" style="color:#fff !important" uk-search-icon type="submit" role="button" class="btn btn-default right">
                         </button>
                         <input class="uk-search-input" placeholder="<?php echo esc_attr_x('Search …', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" type="search" id="search">
                         <input type="hidden" name="post_type" value="product" />
