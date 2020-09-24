@@ -30,7 +30,6 @@ do_action('woocommerce_before_checkout_form', $checkout);
 
 ?>
 <?php global $current_user; wp_get_current_user(); ?>
-<?php if ( is_user_logged_in() ) :  ?>
 
 
 
@@ -77,16 +76,5 @@ do_action('woocommerce_before_checkout_form', $checkout);
 </div>
 <!-- END uk-container -->
 <?php do_action('woocommerce_after_checkout_form', $checkout); ?>
-<?php else: ?>
-<div class="section">
-    <div class=" uk-flex uk-flex-middle uk-flex-center uk-text-center">
-        <div class="loginmodal">
-        <h2 class="uk-modal-title">You must login to complete Checkout </h2>
-        <?php echo do_shortcode('[loginform]') ?>
 
-        </div>
-        </div>
-
-    </div>
-<?php endif; ?>
 
