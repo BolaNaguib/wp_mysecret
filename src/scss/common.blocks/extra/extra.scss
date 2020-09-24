@@ -42,6 +42,25 @@
     background-color: #fe7799;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    color: rgb(124, 17, 17) !important;
+  }
+}
+
+
+
+
+.card_type-submenulinkv2 {
+  & .nav__link-submenuv2 {
+    background-color: #000 !important;
     color: #fff !important;
+    display: inline-block;
+    padding: 5px;
+    font-size: 16px;
+  }
+  & .nav__link-submenuv3{
+    padding: 5px;
+    font-size: 16px;
+    color: #000 !important;
+
   }
 }
