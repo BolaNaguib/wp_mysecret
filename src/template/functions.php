@@ -1,4 +1,51 @@
 <?php
+// add register fields 
+function wooc_extra_register_fields() {?>
+  
+    <div class="clear"></div>
+    <?php
+}
+add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
+
+/**
+* register fields Validating.
+*/
+function wooc_validate_extra_register_fields( $username, $email, $validation_errors ) {
+    if ( isset( $_POST['billing_first_name'] ) && empty( $_POST['billing_first_name'] ) ) {
+           $validation_errors->add( 'billing_first_name_error', __( '<strong>Error</strong>: First name is required!', 'woocommerce' ) );
+    }
+    if ( isset( $_POST['billing_last_name'] ) && empty( $_POST['billing_last_name'] ) ) {
+           $validation_errors->add( 'billing_last_name_error', __( '<strong>Error</strong>: Last name is required!.', 'woocommerce' ) );
+    }
+       return $validation_errors;
+}
+add_action( 'woocommerce_register_post', 'wooc_validate_extra_register_fields', 10, 3 );
+
+/**
+* Below code save extra fields.
+*/
+function wooc_save_extra_register_fields( $customer_id ) {
+    if ( isset( $_POST['billing_phone'] ) ) {
+                 // Phone input filed which is used in WooCommerce
+                 update_user_meta( $customer_id, 'billing_phone', sanitize_text_field( $_POST['billing_phone'] ) );
+          }
+      if ( isset( $_POST['billing_first_name'] ) ) {
+             //First name field which is by default
+             update_user_meta( $customer_id, 'first_name', sanitize_text_field( $_POST['billing_first_name'] ) );
+             // First name field which is used in WooCommerce
+             update_user_meta( $customer_id, 'billing_first_name', sanitize_text_field( $_POST['billing_first_name'] ) );
+      }
+      if ( isset( $_POST['billing_last_name'] ) ) {
+             // Last name field which is by default
+             update_user_meta( $customer_id, 'last_name', sanitize_text_field( $_POST['billing_last_name'] ) );
+             // Last name field which is used in WooCommerce
+             update_user_meta( $customer_id, 'billing_last_name', sanitize_text_field( $_POST['billing_last_name'] ) );
+      }
+}
+
+
+
+
 function mytheme_add_woocommerce_support()
 {
     add_theme_support('woocommerce');

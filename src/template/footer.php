@@ -217,7 +217,12 @@ $music = get_field('music', 'options');
     }
 
     input#user_pass,
-    input#user_login {
+    input#user_login,
+    input#reg_billing_phone,
+    input#reg_billing_first_name,
+    input#reg_billing_last_name,
+    input#reg_email 
+ {
         background-color: #fff;
         border-bottom: 2px solid #eee;
         padding: 10px;
