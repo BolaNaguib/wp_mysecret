@@ -116,8 +116,8 @@ $music = get_field('music', 'options');
         border: 0px;
         margin: 10px 0px;
         font-size: 21px;
-    }</style><div class="uk-grid-collapse section-longcard uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div><!-- START uk-hidden card_type-product --><div class="uk-hidden card_type-product rightblock"><span class="outofstock"></span> <span class="sale"></span></div><!-- END uk-hidden card_type-product --><!-- uk-active uk-grid-collapse --> <?php wp_footer(); ?> <style>.woocs-style-1-dropdown .woocs-style-1-select>i {
-        display: none !importnat;
+    }</style><div class="uk-grid-collapse section-longcard uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div><!-- START uk-hidden card_type-product --><div class="uk-hidden card_type-product rightblock"><span class="outofstock"></span> <span class="sale"></span></div><!-- END uk-hidden card_type-product --><!-- uk-active uk-grid-collapse --> <?php wp_footer(); ?> <style>.nav__link {
+    background: linear-gradient(180deg,transparent 50%,#eee 0) 50%/0 100% no-repeat;
     }
 
     .woocs-style-1-dropdown .woocs-style-1-dropdown-menu {

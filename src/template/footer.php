@@ -259,6 +259,7 @@ $music = get_field('music', 'options');
         margin: 10px 0px;
         font-size: 21px;
     }
+
 </style>
 
 
@@ -272,8 +273,8 @@ $music = get_field('music', 'options');
 <!-- uk-active uk-grid-collapse -->
 <?php wp_footer(); ?>
 <style>
-    .woocs-style-1-dropdown .woocs-style-1-select>i {
-        display: none !importnat;
+    .nav__link {
+    background: linear-gradient(180deg,transparent 50%,#eee 0) 50%/0 100% no-repeat;
     }
 
     .woocs-style-1-dropdown .woocs-style-1-dropdown-menu {

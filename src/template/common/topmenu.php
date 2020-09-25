@@ -91,7 +91,7 @@
                        <!-- START div -->
                        <div class='div'>
                            <a href="<?php home_url() ?>/wishlist">
-                               <img src="<?php echo get_template_directory_uri() ?>/images/wish.png" alt="">
+                               <img  src="<?php echo get_template_directory_uri() ?>/images/wish.png" style="    filter: brightness(0) invert(1);" alt="">
                                <span style=" padding: 1px 5px; color:#fff;" class="badgex"> <?php echo do_shortcode('[ti_wishlist_products_counter]') ?></span>
                            </a>
 
@@ -104,7 +104,7 @@
                                <?php global $woocommerce; ?>
 
 
-                               <img src="<?php echo get_template_directory_uri() ?>/images/cart.png" alt=""> <span style=" padding: 1px 9px;" class="badgex"><?php echo $woocommerce->cart->cart_contents_count ?></span>
+                               <img  src="<?php echo get_template_directory_uri() ?>/images/cart.png" style='   filter: brightness(0) invert(1);' alt=""> <span style="  padding: 1px 9px;" class="badgex"><?php echo $woocommerce->cart->cart_contents_count ?></span>
                                <?php include get_template_directory() . '/common/cartcontainer.php'; ?>
 
 
