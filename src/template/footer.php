@@ -276,7 +276,12 @@ $music = get_field('music', 'options');
     .nav__link {
     background: linear-gradient(180deg,transparent 50%,#eee 0) 50%/0 100% no-repeat;
     }
-
+    .searchBotton {
+    border: 1px solid #000000 !important;
+}
+.searchBotton button {
+    background-color: #000000 !important;
+}
     .woocs-style-1-dropdown .woocs-style-1-dropdown-menu {
         background-color: #000;
         color: #fff;
