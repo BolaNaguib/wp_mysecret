@@ -162,8 +162,8 @@ button.mobilemenu {
 
 .nav__link {
   transition: background-size 0.4s ease !important;
-  background: linear-gradient(to bottom, transparent 50%, #eee 0)
-    center center/0% 100% no-repeat !important;
+  background: linear-gradient(to bottom, transparent 50%, #eee 0) center
+    center/0% 100% no-repeat !important;
   font-family: "Poppins", sans-serif !important;
   font-weight: 600 !important;
   font-style: normal !important;
@@ -174,7 +174,7 @@ button.mobilemenu {
   font-size: 14px !important;
   min-height: unset !important;
   min-height: unset !important;
-  color: #141414 !important;
+  color: #fff !important;
   min-height: unset !important;
 
   &:hover {

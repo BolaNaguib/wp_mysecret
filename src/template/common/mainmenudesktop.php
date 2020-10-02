@@ -29,8 +29,7 @@
                                         <?php if (have_rows('sub_menu', 'options')) : ?>
 
                                             <div class="dropdown-controller navbarboundaryv2" style="display:none;   top: 10px !important; background-color: #000 !important;
-    border: none !important;"
-                                             uk-dropdown="boundary: .navbarboundary; pos: bottom-justify; boundary-align: true;  animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
+    border: none !important;" uk-dropdown="boundary: .navbarboundary; pos: bottom-justify; boundary-align: true;  animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
 
                                                 <!-- START card_type-submenulink -->
                                                 <div class='card_type-submenulink card_type-submenulinkv2 uk-container'>
@@ -49,8 +48,7 @@
                                                                         </a>
                                                                     <?php endif; ?>
                                                                     <!-- START card_type-submenulink -->
-                                                                    <div class="dropdown-controller" style="display:none;     margin-left: 0px; margin-top:20px;" 
-                                                                    uk-dropdown="boundary: .navbarboundaryv2; pos: bottom-justify; boundary-align: true; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
+                                                                    <div class="dropdown-controller" style="display:none;     margin-left: 0px; margin-top:20px;" uk-dropdown="boundary: .navbarboundaryv2; pos: bottom-justify; boundary-align: true; animation: uk-animation-slide-bottom-medium; duration:500;delay-hide: 0">
                                                                         <!-- START card_type-submenulink -->
                                                                         <div class='card_type-submenulink uk-container'>
 
@@ -61,21 +59,21 @@
 
                                                                                         <?php
                                                                                         $subcat = get_sub_field('sub_category');
-                                                                                        $subcatImage = get_sub_field('image') ;
-                                                                                        $altImage = get_template_directory_uri().'/images/bra.PNG';
+                                                                                        $subcatImage = get_sub_field('image');
+                                                                                        $altImage = get_template_directory_uri() . '/images/bra.PNG';
                                                                                         $displaysubcat = $subcatImage['url'] ? $subcatImage['url'] : $altImage;
                                                                                         if ($subcat) : ?>
 
                                                                                             <li>
                                                                                                 <small>
-                                                                                                    <a class="nav__link-submenuv3 uk-text-center uk-align-center" href="<?php echo esc_url(get_term_link($subcat)); ?>"> 
-                                                                                                    <img src="<?php echo $displaysubcat?>" style="    height: 65px;
+                                                                                                    <a class="nav__link-submenuv3 uk-text-center uk-align-center" href="<?php echo esc_url(get_term_link($subcat)); ?>">
+                                                                                                        <img src="<?php echo $displaysubcat ?>" style="    height: 65px;
     width: 65px;
     border-radius: 100%;
     border: 1px solid #000;
     display: inline-block;" alt="">
-                                                                                                    <span style="display: block;">  <?php echo esc_html($subcat->name); ?></span>
-                                                                                                   
+                                                                                                        <span style="display: block;"> <?php echo esc_html($subcat->name); ?></span>
+
 
                                                                                                 </small></li>
                                                                                         <?php endif; ?>
@@ -118,7 +116,7 @@
 
                     <form class="uk-search searchBotton" method="get" action="<?php echo home_url('/'); ?>" role="search">
 
-                        <button class="uk-search-icon-flip" style="color:#fff !important" uk-search-icon type="submit" role="button" class="btn btn-default right">
+                        <button class="uk-search-icon-flip" style="color:#000 !important" uk-search-icon type="submit" role="button" class="btn btn-default right">
                         </button>
                         <input class="uk-search-input" placeholder="<?php echo esc_attr_x('Search …', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" type="search" id="search">
                         <input type="hidden" name="post_type" value="product" />

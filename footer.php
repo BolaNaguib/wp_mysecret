@@ -6,9 +6,12 @@ $tw = get_field('twitter', 'options');
 $pi = get_field('pinterest', 'options');
 $ig = get_field('instagram', 'options');
 $music = get_field('music', 'options');
-?> <audio style="position: fixed;
+?> <!-- <audio style="    position: fixed;
     bottom: 24px;
-    left: 10px;" controls><source src="<?php echo $music['url'] ?>" type="audio/mpeg">Your browser does not support the audio element.</audio><!-- This is the modal --><style>.couponcontainer {
+    left: 10px;" controls>
+    <source src="<?php echo $music['url'] ?>" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio> --><!-- This is the modal --><style>.couponcontainer {
         background-color: #000;
         color: #fff;
         padding: 10px 20px;
@@ -79,8 +82,7 @@ $music = get_field('music', 'options');
     input#reg_billing_phone,
     input#reg_billing_first_name,
     input#reg_billing_last_name,
-    input#reg_email 
- {
+    input#reg_email {
         background-color: #fff;
         border-bottom: 2px solid #eee;
         padding: 10px;
@@ -117,14 +119,18 @@ $music = get_field('music', 'options');
         margin: 10px 0px;
         font-size: 21px;
     }</style><div class="uk-grid-collapse section-longcard uk-text-center uk-margin-top outofstock sale woocommerce-input-wrapper uk-hidden uk-scrollspy wp-block uk-open uk-animation-fade uk-animation-enter uk-margin-bottom uk-transition-active mainbutton woocommerce-loop-product__link" style="display: none !important"></div><!-- START uk-hidden card_type-product --><div class="uk-hidden card_type-product rightblock"><span class="outofstock"></span> <span class="sale"></span></div><!-- END uk-hidden card_type-product --><!-- uk-active uk-grid-collapse --> <?php wp_footer(); ?> <style>.nav__link {
-    background: linear-gradient(180deg,transparent 50%,#eee 0) 50%/0 100% no-repeat;
+        background: linear-gradient(180deg, transparent 50%, #eee 0) 50%/0 100% no-repeat;
     }
+
     .searchBotton {
-    border: 1px solid #000000 !important;
-}
-.searchBotton button {
-    background-color: #000000 !important;
-}
+        background-color: #fff;
+        border: 1px solid #fff !important;
+    }
+
+    .searchBotton button {
+        background-color: #fff !important;
+    }
+
     .woocs-style-1-dropdown .woocs-style-1-dropdown-menu {
         background-color: #000;
         color: #fff;
@@ -647,6 +653,15 @@ $music = get_field('music', 'options');
 
     .wishlist_products_counter_number {
         color: #fff !important;
+    }
+
+    .woocs-style-1-select {
+        padding: 0px 5px !important;
+    }
+
+    .mobilemenu {
+        background-color: #000;
+        color: #fff;
     }</style><script>$(document).ready(function() {
 
         setTimeout(function() {

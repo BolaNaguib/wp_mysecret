@@ -9,12 +9,12 @@ $music = get_field('music', 'options');
 ?>
 
 
-<audio style="    position: fixed;
+<!-- <audio style="    position: fixed;
     bottom: 24px;
     left: 10px;" controls>
     <source src="<?php echo $music['url'] ?>" type="audio/mpeg">
     Your browser does not support the audio element.
-</audio>
+</audio> -->
 <!-- This is the modal -->
 <style>
     .couponcontainer {
@@ -221,8 +221,7 @@ $music = get_field('music', 'options');
     input#reg_billing_phone,
     input#reg_billing_first_name,
     input#reg_billing_last_name,
-    input#reg_email 
- {
+    input#reg_email {
         background-color: #fff;
         border-bottom: 2px solid #eee;
         padding: 10px;
@@ -259,7 +258,6 @@ $music = get_field('music', 'options');
         margin: 10px 0px;
         font-size: 21px;
     }
-
 </style>
 
 
@@ -274,14 +272,18 @@ $music = get_field('music', 'options');
 <?php wp_footer(); ?>
 <style>
     .nav__link {
-    background: linear-gradient(180deg,transparent 50%,#eee 0) 50%/0 100% no-repeat;
+        background: linear-gradient(180deg, transparent 50%, #eee 0) 50%/0 100% no-repeat;
     }
+
     .searchBotton {
-    border: 1px solid #000000 !important;
-}
-.searchBotton button {
-    background-color: #000000 !important;
-}
+        background-color: #fff;
+        border: 1px solid #fff !important;
+    }
+
+    .searchBotton button {
+        background-color: #fff !important;
+    }
+
     .woocs-style-1-dropdown .woocs-style-1-dropdown-menu {
         background-color: #000;
         color: #fff;
@@ -812,6 +814,15 @@ $music = get_field('music', 'options');
 
     .wishlist_products_counter_number {
         color: #fff !important;
+    }
+
+    .woocs-style-1-select {
+        padding: 0px 5px !important;
+    }
+
+    .mobilemenu {
+        background-color: #000;
+        color: #fff;
     }
 </style>
 
