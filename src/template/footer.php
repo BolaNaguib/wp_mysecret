@@ -822,6 +822,11 @@ $music = get_field('music', 'options');
         background-color: #000;
         color: #fff;
     }
+
+    .woocommerce-billing-fields__field-wrapper input {
+        background-color: #eee !important;
+        border: none;
+    }
 </style>
 
 

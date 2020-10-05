@@ -8,8 +8,8 @@
                 <div class="uk-navbar-left">
 
                     <a class="nav__link" href="/">
-                        My Secret</a>
-                    <!-- <img loading="lazy" style="max-height:110px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>"> -->
+                        <img loading="lazy" style="max-height:110px" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" title="<?php echo $logo['title']; ?>">
+                    </a>
                 </div>
                 <div class="uk-navbar-center">
                     <ul class="uk-navbar-nav">
