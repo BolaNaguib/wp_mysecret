@@ -4,7 +4,7 @@
     <!-- START uk-container -->
     <div class=''>
         <div uk-slideshow="animation: fade">
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" style="  max-height: 75vh;">
                 <?php if (have_rows('slider')) : ?>
                     <ul class="uk-slideshow-items">
                         <?php while (have_rows('slider')) : the_row();
@@ -13,7 +13,7 @@
                             $page = get_sub_field('page');
                         ?>
                             <li>
-                                <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" uk-cover>
+                                <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" style="width: 100%; max-height:700px;">
                             </li>
                         <?php endwhile; ?>
 
