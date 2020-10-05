@@ -792,9 +792,7 @@ $music = get_field('music', 'options');
         margin-right: -50vw;
     }
 
-    .mainmenua_navbar {
-        padding: 25px 0px 25px 0px;
-    }
+
 
     .imageContainer .imageHover {
         position: absolute;
