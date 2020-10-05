@@ -32,7 +32,7 @@ if (empty($product) || !$product->is_visible()) {
 ?>
 
 <!-- content-product -->
-<div <?php wc_product_class('uk-width-1-5@m uk-width-1-2 uk-margin-bottom uk-text-center', $product); ?>>
+<div <?php wc_product_class('uk-width-1-3@m uk-width-1-2 uk-margin-bottom uk-text-center', $product); ?>>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
